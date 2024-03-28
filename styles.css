@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.big-image {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    padding-top: 12rem;
+	padding-bottom: 12rem;
+	background-image: url("./images/main-illustration.jpg");
+	
+}
+.btn-primary {
+	background-color: #341F09;
+}
+.btn-success {
+	background-color: #341F09;
+	border-color:#341F09 !important;
+}
+.btn-outline-success {
+	border-color: #341F09 !important;
+}
+.hero-search {
+	background-color: #94c1db;
+	border-radius: 12px;
+}
+.navbar {
+	background-color: #fff0cf !important;
+}
+.btn-outline-success:hover {
+	background-color: #341F09;
+}
+.btn-success:hover {
+	background-color: #341F09;
+}
+.border-bottom {
+	border-color: #341F09 !important;
+}
+.icon {
+	width: 30px;
+	height: 35px;
+}

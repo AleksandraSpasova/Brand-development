@@ -10,6 +10,15 @@
 	background-image: url("./images/main-illustration.jpg");
 	
 }
+.medium-image {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    padding-top: 15rem;
+	padding-bottom: 4rem;
+	background-image: url("images/medium-pic.jpg");
+	background-size: 100%;
+}
 .btn-primary {
 	background-color: #341F09;
 }
@@ -24,11 +33,20 @@
 	background-color: #94c1db;
 	border-radius: 12px;
 }
+.search {
+	background-color: #fff0cf;
+}
 .navbar {
 	background-color: #fff0cf !important;
 }
 .btn-outline-success:hover {
 	background-color: #341F09;
+}
+.btn-outline-success:active {
+	background-color: #0a58ca !important;
+}
+.btn-success:active {
+	background-color: #0a58ca !important;
 }
 .btn-success:hover {
 	background-color: #341F09;
@@ -39,4 +57,18 @@
 .icon {
 	width: 30px;
 	height: 35px;
+}
+h1 {
+	font-family: "Barrio" !important;
+	font-size: 70px !important;
+}
+h2 {
+	font-family: "Barrio" !important;
+	font-size: 40px !important;
+}
+h6{
+	font-size: 28px;
+}
+.card-first {
+	background-color: #fff0cf;
 }

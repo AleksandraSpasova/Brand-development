@@ -1,142 +1,300 @@
 <!doctype html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doggify</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doggify</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link href="styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg border-bottom">
-      <div class="container-fluid"> <a class="navbar-brand" href="#"> <img src="images/dark paw logo.png" alt=""
+<div class="container">
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container-fluid"> <a class="navbar-brand" href="./index.html"> <img src="images/dark paw logo.png" alt=""
             width="30" height="35"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
             class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"> <a class="nav-link" aria-current="page" href="#">Blog</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Corporate</a> </li>
-          </ul>
-          <div class="d-flex"> <a href="#" class="btn btn-success me-2">Sign Up</a> <a href="#"
-              class="btn btn-outline-success">Log In</a> </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> <a class="nav-link" aria-current="page" href="./blog.html">Blog</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Corporate</a> </li>
+        </ul>
+        <div class="d-flex"> <a class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a> <a class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#logInModal">Log In</a> </div>
       </div>
-    </nav>
-    <div class="medium-image">
-      <h2 class="display-5 fw-bold text-center mt-2 mb-4">Find a sitter</h2>
     </div>
-    <div class="search p-4 gap-2 mb-4 shadow">
-      <form>
-        <div class="row">
-          <div class="col-3">
-            <div class="form-group">
-              <input type="text" class="form-control" id="location" placeholder="Location">
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-group">
-              <input type="date" class="form-control" id="dates">
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-group">
-              <select class="form-control" id="size">
-                <option value="">Dog size</option>
-                <option value="small">Small (1-10 kg)</option>
-                <option value="medium">Medium (11-26 kg)</option>
-                <option value="large">Large (27-45 kg)</option>
-                <option value="large">Extra-Large (46+ kg)</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-group">
-              <select class="form-control" id="age">
-                <option value="">Dog age</option>
-                <option value="puppy">Puppy (0-1 years)</option>
-                <option value="adult">Adult (2-8 years)</option>
-                <option value="senior">Senior (9+ years)</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-group">
-              <div class="d-grid gap-2"> </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <h3 class="subtitle  mb-4">We have 4 dog sitters available in your area</h3>
-        <div class="card mb-3 mx-3 px-3 shadow">
-          <div class="row g-0">
-            <div class="col-md-4 pt-3 pb-2"> <img src="images/person-one.png" class="img-fluid rounded-start"
-                alt="person"> </div>
-            <div class="col-md-8 mt-4">
-              <div class="card-body">
-                <h5 class="card-title">Marina Alfonso</h5>
-                <p class="card-text">★★★☆☆</p>
-                <a href="#" class="btn btn-primary">CONTACT</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3 mx-3 px-3 shadow">
-          <div class="row g-0">
-            <div class="col-md-4 pt-3 pb-2"> <img src="images/person-two.png" class="img-fluid rounded-start"
-                alt="person"> </div>
-            <div class="col-md-8 mt-4">
-              <div class="card-body">
-                <h5 class="card-title">Lilly Martinique</h5>
-                <p class="card-text">★★★★☆</p>
-                <a href="#" class="btn btn-primary">CONTACT</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3 mx-3 px-3 shadow">
-          <div class="row g-0">
-            <div class="col-md-4 pt-3 pb-2"> <img src="images/person-three.png" class="img-fluid rounded-start"
-                alt="person"> </div>
-            <div class="col-md-8 mt-4">
-              <div class="card-body">
-                <h5 class="card-title">Novak Mihailovic</h5>
-                <p class="card-text">★★☆☆☆</p>
-                <a href="#" class="btn btn-primary">CONTACT</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 mt-5"><img class="img-fluid" src="images/breda-map.png" alt="map"> </div>
-    </div>
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center"> <a href="/"
-          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Doggify, Inc</span> </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/doggify_nl/"> <img class="bi"
-              width="24" height="24" src="images/insta-logo.png" alt="instagram"> </a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61556956304748">
-            <img class="bi" width="24" height="24" src="images/facebook-logo.png" alt="facebook"> </a></li>
-      </ul>
-    </footer>
+  </nav>
+  <div class="medium-image">
+    <h2 class="display-5 fw-bold text-center mt-2 mb-4">Find a sitter</h2>
   </div>
-</body>
+  <div class="search p-4 gap-2 mb-4 shadow">
+    <form>
+      <div class="row">
+        <div class="col-3">
+          <div class="form-group">
+            <input type="text" class="form-control" id="location" placeholder="Location">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <input type="date" class="form-control" id="dates">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <select class="form-control" id="size">
+              <option value="">Dog size</option>
+              <option value="small">Small (1-10 kg)</option>
+              <option value="medium">Medium (11-26 kg)</option>
+              <option value="large">Large (27-45 kg)</option>
+              <option value="large">Extra-Large (46+ kg)</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <select class="form-control" id="age">
+              <option value="">Dog age</option>
+              <option value="puppy">Puppy (0-1 years)</option>
+              <option value="adult">Adult (2-8 years)</option>
+              <option value="senior">Senior (9+ years)</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <div class="d-grid gap-2"> </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h3 class="subtitle  mb-4">We have 4 dog sitters available in your area</h3>
+      <div class="card mb-3 mx-3 px-3 shadow">
+        <div class="row g-0">
+          <div class="col-md-4 pt-3 pb-2"> <img src="images/person-one.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Marina Alfonso</h5>
+              <p class="card-text">★★★☆☆</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal1">CONTACT</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 mx-3 px-3 shadow">
+        <div class="row g-0">
+          <div class="col-md-4 pt-3 pb-2"> <img src="images/person-two.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Lilly Martinique</h5>
+              <p class="card-text">★★★★☆</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal2">CONTACT</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 mx-3 px-3 shadow">
+        <div class="row g-0">
+          <div class="col-md-4 pt-3 pb-2"> <img src="images/person-three.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Novak Mihailovic</h5>
+              <p class="card-text">★★☆☆☆</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal3">CONTACT</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 mt-5"><img class="img-fluid" src="images/breda-map.png" alt="map"> </div>
+  </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center"> <a href="/"
+          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+      </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Doggify, Inc</span> </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/doggify_nl/"> <img class="bi"
+              width="24" height="24" src="images/insta-logo.png" alt="instagram"> </a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61556956304748"> <img class="bi" width="24" height="24" src="images/facebook-logo.png" alt="facebook"> </a></li>
+    </ul>
+  </footer>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 mt-1">
+          <div class="col-md-6">
+            <label for="firstname" class="form-label">First name</label>
+            <input type="email" class="form-control" id="inputname">
+          </div>
+          <div class="col-md-6">
+            <label for="lastname" class="form-label">Last name</label>
+            <input type="password" class="form-control" id="inputsurname">
+          </div>
+          <div class="col-12">
+            <label for="inputemail" class="form-label">Email</label>
+            <input type="text" class="form-control" id="inputemail">
+          </div>
+          <div class="col-12">
+            <label for="inputpassword" class="form-label">Create password</label>
+            <input type="text" class="form-control" id="inputpassword">
+          </div>
+          <div class="col-12 mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck"> I agree to Doggify's Terms and Privacy Policy. </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="examplelable">Log In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3 mt-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1"> Remember me </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="contactModal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-0">
+          <div class="col-md-4 pb-2"> <img src="images/person-one.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-5">
+            <div class="card-body">
+              <h5 class="title">Marina Alfonso</h5>
+              <p class="card-text">★★★☆☆</p>
+            </div>
+          </div>
+          <h5 class="subtitle  mb-4">About Marina</h5>
+          <p class="about-text mb-4">Hi! My name is Marina Alfonso. I am a pet lover. At home I have a dog, two cats, and a hamster. It’s always a lot of fun!</p>
+          <h5 class="subtitle  mb-4">About Marina's home</h5>
+          <p class="about-text">✓Trustful </p>
+          <p class="about-text">✓Cozy </p>
+          <p class="about-text">✓Welcoming </p>
+        </div>
+      </div>
+      <div class="modal-footer"> <a class="btn btn-primary shadow" href="./subscription.html">BOOK NOW</a> </div>
+    </div>
+  </div>
+</div>
+	<div class="modal" tabindex="-1" id="contactModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-0">
+          <div class="col-md-4 pb-2"> <img src="images/person-two.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-5">
+            <div class="card-body">
+              <h5 class="title">Lilly Martinique</h5>
+              <p class="card-text">★★★★☆</p>
+            </div>
+          </div>
+          <h5 class="subtitle  mb-4">About Lilly</h5>
+          <p class="about-text mb-4">Hi! My name is Lilly. I am a pet lover. At home I have a  five dogs. It’s always a lot of fun!</p>
+          <h5 class="subtitle  mb-4">About Lilly's home</h5>
+          <p class="about-text">✓Cheerful </p>
+          <p class="about-text">✓Cozy </p>
+          <p class="about-text">✓Reliable </p>
+        </div>
+      </div>
+      <div class="modal-footer"> <a class="btn btn-primary shadow" href="./subscription.html">BOOK NOW</a> </div>
+    </div>
+  </div>
+</div>
+	<div class="modal" tabindex="-1" id="contactModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-0">
+          <div class="col-md-4 pb-2"> <img src="images/person-three.png" class="img-fluid rounded-start"
+                alt="person"> </div>
+          <div class="col-md-8 mt-5">
+            <div class="card-body">
+              <h5 class="title">Novak Mihailovic</h5>
+              <p class="card-text">★★☆☆☆</p>
+            </div>
+          </div>
+          <h5 class="subtitle  mb-4">About Novak</h5>
+          <p class="about-text mb-4">Hi! My name is Novak. I am a pet lover, but I don't have any pets.</p>
+          <h5 class="subtitle  mb-4">About Novak's home</h5>
+          <p class="about-text">✓Cool </p>
+          <p class="about-text">✓Social </p>
+          <p class="about-text">✓Flexible </p>
+        </div>
+      </div>
+      <div class="modal-footer"> <a class="btn btn-primary shadow" href="./subscription.html">BOOK NOW</a> </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 </html>

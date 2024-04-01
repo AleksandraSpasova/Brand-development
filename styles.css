@@ -36,6 +36,9 @@
 .search {
 	background-color: #fff0cf;
 }
+.back {
+	background-color: #fff0cf;
+}
 .navbar {
 	background-color: #fff0cf !important;
 }
@@ -71,4 +74,7 @@ h6{
 }
 .card-first {
 	background-color: #fff0cf;
+}
+.badge {
+	background-color: #94c1db !important;
 }

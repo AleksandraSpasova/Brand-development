@@ -1,177 +1,345 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Doggify</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link href="styles.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doggify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-<div class="container">
-  <nav class="navbar navbar-expand-lg border-bottom">
-    <div class="container-fluid"> <a class="navbar-brand" href="./index.html"> <img src="images/dark paw logo.png" alt="logo"
-            width="30" height="35"> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-            class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" aria-current="page" href="./blog.html">Blog</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Corporate</a> </li>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="images/dark paw logo.png"
+              alt="logo"
+              width="30"
+              height="35"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Corporate</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a
+                class="btn btn-success me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+                >Sign Up</a
+              >
+              <a
+                class="btn btn-outline-success"
+                data-bs-toggle="modal"
+                data-bs-target="#logInModal"
+                >Log In</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="medium-image mb-5">
+        <h2 class="display-5 fw-bold text-center mt-2 mb-4">
+          Tips and tricks for naming your dog
+        </h2>
+      </div>
+      <p class="lead px-5 mb-4">
+        Whether you're bringing home a playful puppy or adopting a lovable
+        rescue dog, finding the perfect name that suits your pet's personality,
+        appearance, and spirit can set the tone for your lifelong bond. To help
+        you navigate this important decision, here's a guide to choosing a dog
+        name that you and your furry friend will love.
+      </p>
+      <h2 class="display-5 fw-bold mt-2 mb-4">
+        Consider Your Dog's Personality
+      </h2>
+      <p class="lead px-5 mb-4">
+        Take some time to observe your dog's personality traits and
+        characteristics. Is your dog energetic and playful, calm and gentle, or
+        perhaps a bit mischievous? Choosing a name that reflects your dog's
+        unique personality can be a great way to celebrate their individuality.
+      </p>
+      <h2 class="display-5 fw-bold mt-2 mb-4">Think About Their Appearance</h2>
+      <p class="lead px-5 mb-4">
+        Take inspiration from your dog's physical appearance when selecting a
+        name. Are they fluffy like a cloud, sleek like a panther, or perhaps
+        spotted like a leopard? Names like "Fluffy," "Shadow," or "Spot" can
+        highlight your dog's distinctive features and make them stand out.
+      </p>
+      <h2 class="display-5 fw-bold mt-2 mb-4">
+        Keep It Simple and Easy to Pronounce
+      </h2>
+      <p class="lead px-5 mb-4">
+        Opt for a name that is simple and easy to pronounce, both for you and
+        others who will interact with your dog. Avoid names that are too long or
+        complicated, as they may be difficult for your dog to recognize and
+        respond to. Choose a name that you can easily call out with affection
+        and enthusiasm.
+      </p>
+      <h2 class="display-5 fw-bold mt-2 mb-4">Test It Out</h2>
+      <p class="lead px-5 mb-4">
+        Once you've narrowed down your list of potential names, test them out to
+        see how your dog responds. Call out each name and observe your dog's
+        reaction – do they perk up their ears, wag their tail, or come running
+        when they hear it? Pay attention to which names evoke the most positive
+        response from your pet.
+      </p>
+      <p class="lead px-5 mb-4">
+        Choosing the perfect name for your dog is a fun and rewarding process
+        that allows you to express your creativity and affection for your furry
+        companion. By considering your dog's personality, appearance, and your
+        own interests, you can select a name that is meaningful, memorable, and
+        perfectly suited to your new four-legged friend. Take your time, enjoy
+        the process, and cherish the special bond that you and your dog will
+        share for years to come.
+      </p>
+      <h2 class="display-5 fw-bold py-4 border-top">Comments</h2>
+      <p class="text mb-4">Be the first to comment.</p>
+      <h2 class="display-5 fw-bold py-4 border-top">Leave a comment</h2>
+      <form>
+        <div class="row mb-2">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your name"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Your email"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <textarea
+            class="form-control"
+            id="comment"
+            placeholder="Comment"
+            style="height: 200px"
+          ></textarea>
+        </div>
+      </form>
+      <div class="text-end">
+        <button class="btn btn-primary shadow btn-lg" type="button">
+          Add a comment
+        </button>
+      </div>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2024 Doggify, Inc</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/doggify_nl/"
+            >
+              <img
+                class="bi"
+                width="24"
+                height="24"
+                src="images/insta-logo.png"
+                alt="instagram"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.facebook.com/profile.php?id=61556956304748"
+            >
+              <img
+                class="bi"
+                width="24"
+                height="24"
+                src="images/facebook-logo.png"
+                alt="facebook"
+              />
+            </a>
+          </li>
         </ul>
-        <div class="d-flex"> <a class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a> <a class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#logInModal">Log In</a> </div>
-      </div>
+      </footer>
     </div>
-  </nav>
-  <div class="medium-image mb-5">
-    <h2 class="display-5 fw-bold text-center mt-2 mb-4">Tips and tricks for naming your dog</h2>
-  </div>
-  <p class="lead px-5 mb-4">Whether you're bringing home a playful puppy or adopting a lovable rescue dog, finding the
-    perfect name that suits your pet's personality, appearance, and spirit can set the tone for your lifelong bond. To
-    help you navigate this important decision, here's a guide to choosing a dog name that you and your furry friend
-    will love.</p>
-  <h2 class="display-5 fw-bold mt-2 mb-4">Consider Your Dog's Personality</h2>
-  <p class="lead px-5 mb-4">Take some time to observe your dog's personality traits and characteristics. Is your dog
-    energetic and playful, calm and gentle, or perhaps a bit mischievous? Choosing a name that reflects your dog's
-    unique personality can be a great way to celebrate their individuality.</p>
-  <h2 class="display-5 fw-bold mt-2 mb-4">Think About Their Appearance</h2>
-  <p class="lead px-5 mb-4">Take inspiration from your dog's physical appearance when selecting a name. Are they
-    fluffy like a cloud, sleek like a panther, or perhaps spotted like a leopard? Names like "Fluffy," "Shadow," or
-    "Spot" can highlight your dog's distinctive features and make them stand out.</p>
-  <h2 class="display-5 fw-bold mt-2 mb-4">Keep It Simple and Easy to Pronounce</h2>
-  <p class="lead px-5 mb-4">Opt for a name that is simple and easy to pronounce, both for you and others who will
-    interact with your dog. Avoid names that are too long or complicated, as they may be difficult for your dog to
-    recognize and respond to. Choose a name that you can easily call out with affection and enthusiasm.</p>
-  <h2 class="display-5 fw-bold mt-2 mb-4">Test It Out</h2>
-  <p class="lead px-5 mb-4">Once you've narrowed down your list of potential names, test them out to see how your dog
-    responds. Call out each name and observe your dog's reaction – do they perk up their ears, wag their tail, or come
-    running when they hear it? Pay attention to which names evoke the most positive response from your pet.</p>
-  <p class="lead px-5 mb-4">Choosing the perfect name for your dog is a fun and rewarding process that allows you to
-    express your creativity and affection for your furry companion. By considering your dog's personality, appearance,
-    and your own interests, you can select a name that is meaningful, memorable, and perfectly suited to your new
-    four-legged friend. Take your time, enjoy the process, and cherish the special bond that you and your dog will
-    share for years to come.</p>
-  <h2 class="display-5 fw-bold py-4 border-top">Comments</h2>
-  <p class="text mb-4">Be the first to comment.</p>
-  <h2 class="display-5 fw-bold py-4 border-top">Leave a comment</h2>
-  <form>
-    <div class="row mb-2">
-      <div class="col-4">
-        <div class="form-group">
-          <input type="text" class="form-control" id="name" placeholder="Your name">
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <input type="text" class="form-control" id="email" placeholder="Your email">
-        </div>
-      </div>
-    </div>
-    <div class="form-group mb-4">
-      <textarea class="form-control" id="comment" placeholder="Comment" style="height: 200px;"></textarea>
-    </div>
-  </form>
-  <div class="text-end">
-    <button class="btn btn-primary shadow btn-lg" type="button">Add a comment</button>
-  </div>
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center"> <a href="/"
-          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-      <svg class="bi" width="30" height="24">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Doggify, Inc</span> </div>
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/doggify_nl/"> <img class="bi"
-              width="24" height="24" src="images/insta-logo.png" alt="instagram"> </a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61556956304748"> <img class="bi" width="24" height="24" src="images/facebook-logo.png" alt="facebook"> </a></li>
-    </ul>
-  </footer>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="exampleModalLabel">Sign Up</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form class="row g-3 mt-1">
-          <div class="col-md-6">
-            <label for="firstname" class="form-label">First name</label>
-            <input type="email" class="form-control" id="inputname">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="exampleModalLabel">Sign Up</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="col-md-6">
-            <label for="lastname" class="form-label">Last name</label>
-            <input type="password" class="form-control" id="inputsurname">
-          </div>
-          <div class="col-12">
-            <label for="inputemail" class="form-label">Email</label>
-            <input type="text" class="form-control" id="inputemail">
-          </div>
-          <div class="col-12">
-            <label for="inputpassword" class="form-label">Create password</label>
-            <input type="text" class="form-control" id="inputpassword">
-          </div>
-          <div class="col-12 mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck"> I agree to Doggify's Terms and Privacy Policy. </label>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="examplelable">Log In</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="row mb-3 mt-3">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-sm-10 offset-sm-2">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1"> Remember me </label>
+          <div class="modal-body">
+            <form class="row g-3 mt-1">
+              <div class="col-md-6">
+                <label for="firstname" class="form-label">First name</label>
+                <input type="email" class="form-control" id="inputname" />
               </div>
-            </div>
+              <div class="col-md-6">
+                <label for="lastname" class="form-label">Last name</label>
+                <input type="password" class="form-control" id="inputsurname" />
+              </div>
+              <div class="col-12">
+                <label for="inputemail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputemail" />
+              </div>
+              <div class="col-12">
+                <label for="inputpassword" class="form-label"
+                  >Create password</label
+                >
+                <input type="text" class="form-control" id="inputpassword" />
+              </div>
+              <div class="col-12 mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    I agree to Doggify's Terms and Privacy Policy.
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg">Log In</button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-lg">
+              Sign Up
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
+    <div
+      class="modal fade"
+      id="logInModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="examplelable">Log In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3 mt-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"
+                  >Password</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword3"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck1"
+                    />
+                    <label class="form-check-label" for="gridCheck1">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-lg">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

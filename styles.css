@@ -2,79 +2,88 @@
 /* CSS Document */
 
 .big-image {
-	background-size: cover;
-	background-position: center;
-	position: relative;
-    padding-top: 12rem;
-	padding-bottom: 12rem;
-	background-image: url("./images/main-illustration.jpg");
-	
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-image: url("./images/main-illustration.jpg");
 }
 .medium-image {
-	background-size: cover;
-	background-position: center;
-	position: relative;
-    padding-top: 15rem;
-	padding-bottom: 4rem;
-	background-image: url("images/medium-pic.jpg");
-	background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 15rem;
+  padding-bottom: 4rem;
+  background-image: url("images/medium-pic.jpg");
 }
 .btn-primary {
-	background-color: #341F09;
+  background-color: #341f09;
 }
 .btn-success {
-	background-color: #341F09;
-	border-color:#341F09 !important;
+  background-color: #341f09;
+  border-color: #341f09 !important;
 }
 .btn-outline-success {
-	border-color: #341F09 !important;
+  border-color: #341f09 !important;
 }
 .hero-search {
-	background-color: #94c1db;
-	border-radius: 12px;
+  background-color: #94c1db;
+  border-radius: 12px;
 }
 .search {
-	background-color: #fff0cf;
+  background-color: #fff0cf;
 }
 .back {
-	background-color: #fff0cf;
+  background-color: #fff0cf;
 }
 .navbar {
-	background-color: #fff0cf !important;
+  background-color: #fff0cf !important;
 }
 .btn-outline-success:hover {
-	background-color: #341F09;
+  background-color: #341f09;
 }
 .btn-outline-success:active {
-	background-color: #0a58ca !important;
+  background-color: #0a58ca !important;
 }
 .btn-success:active {
-	background-color: #0a58ca !important;
+  background-color: #0a58ca !important;
 }
 .btn-success:hover {
-	background-color: #341F09;
+  background-color: #341f09;
 }
 .border-bottom {
-	border-color: #341F09 !important;
+  border-color: #341f09 !important;
 }
 .icon {
-	width: 30px;
-	height: 35px;
+  width: 30px;
+  height: 35px;
 }
 h1 {
-	font-family: "Barrio" !important;
-	font-size: 70px !important;
+  font-family: "Barrio" !important;
+  font-size: 70px !important;
 }
 h2 {
-	font-family: "Barrio" !important;
-	font-size: 40px !important;
+  font-family: "Barrio" !important;
+  font-size: 40px !important;
 }
-h6{
-	font-size: 28px;
+h6 {
+  font-size: 28px;
 }
 .card-first {
-	background-color: #fff0cf;
+  background-color: #fff0cf;
 }
 .badge {
-	background-color: #94c1db !important;
+  background-color: #94c1db !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .mobile-card-color {
+    background-color: #fff0cf;
+    font-size: 24px;
+    font-weight: 600;
+  }
 }

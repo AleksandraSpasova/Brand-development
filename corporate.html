@@ -1,272 +1,1858 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Doggify</title>
-<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-<link href="styles.css" rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-      href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doggify</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-<div class="container">
-  <nav class="navbar navbar-expand-lg border-bottom">
-    <div class="container-fluid"> <a class="navbar-brand" href="./index.html"> <img src="images/dark-logo.png" alt="" width="30" height="35" /> </a>
-      <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          > <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" aria-current="page" href="./blog.html"
-                  >Blog</a
-                > </li>
-          <li class="nav-item"> <a class="nav-link" href="./corporate.html">Corporate</a> </li>
-        </ul>
-        <div class="d-flex"> <a
-                class="btn btn-success me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#signUpModal"
-                >Sign Up</a
-              > <a
-                class="btn btn-outline-success"
-                data-bs-toggle="modal"
-                data-bs-target="#logInModal"
-                >Log In</a> </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="images/dark-logo.png" alt="" width="30" height="35" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./corporate.html">Corporate</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a>
+            <a class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#logInModal">Log In</a>
+          </div>
+        </div>
       </div>
+    </nav>
+    <div class="medium-image mb-5">
+      <h2 class="display-5 fw-bold text-center mt-2 mb-4">Corporate</h2>
     </div>
-  </nav>
-  <div class="medium-image mb-5">
-    <h2 class="display-5 fw-bold text-center mt-2 mb-4"> Corporate </h2>
+    <main class="container-fluid container-xl">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-2 py-4">
+          <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
+            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#general">General</a>
+            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none active" href="#content">Content</a>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#production">Production</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-1">Design Elements</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-2">Credits</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-3">Testing Report</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#marketing">Marketing</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-1">Context of campaign and promotional activities</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-2">Learning Points</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-3">Future Planning</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-4">Professionalism</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#management">Management</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#management-1">Lean Canvas</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#management-2">Validation of Assumptions</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#appendix">Appendix</a>
+          </nav>
+        </div>
+        <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
+          <!-- Start General -->
+          <h2 id="general">General Information</h2>
+          <p>
+            This branded website is publicly available at
+            <a href="https://aleksandraspasova.github.io/Brand-development/">Doggify</a>
+            <em>(please change text <strong>and</strong> hyperlink
+              destination)</em>
+          </p>
+          <p>This website was created by:</p>
+          <ol>
+            <li>Aleksandra Spasova (ID: 220407)</li>
+            <li>Evgenia Trifonova (ID: 224797)</li>
+            <li>Nia Yonkova (ID: 220232)</li>
+            <li>Shanel Yuseinova (ID: 220992)</li>
+          </ol>
+          <!-- End General -->
+
+          <!-- Start Content -->
+
+          <h2 id="content">Content</h2>
+          <p>
+            Please clarify here the match between students and pieces of
+            content. Make sure that you provide a <u>link</u> to the correct
+            page within the website
+          </p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="bg-white">
+                <th scope="col">#</th>
+                <th scope="col">Student ID</th>
+                <th scope="col">Value</th>
+                <th scope="col">Name and link of content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1.</th>
+                <td>Aleksandra Spasova (220407)</td>
+                <td>Brand identity and persona</td>
+                <td>
+                  <a
+                    href="https://www.figma.com/file/oleESgYsh76U2U0LSxQhox/Brand-Development---identity?type=design&node-id=0%3A1&mode=design&t=hOPfOtbGKNViJvwn-1">Brand
+                    identity</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2.</th>
+                <td>Evgenia Trifonova (224797)</td>
+                <td>UX copy</td>
+                <td>
+                  <p>It is part of every page in the website.</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3.</th>
+                <td>Nia Yonkova (220232)</td>
+                <td>Mission, vision and values</td>
+                <td>
+                  <a href="./index.html#mission-vision-values">Content title</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4.</th>
+                <td>Shanel Yuseinova (220992)</td>
+                <td>Social media content</td>
+                <td>
+                  <a href="https://www.instagram.com/doggify_nl/">Instagram</a>
+                  <a href="https://www.facebook.com/profile.php?id=61556956304748">Facebook</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <img class="persona" src="./images/persona.jpg" alt="map" id="persona" />
+          <!-- End Content, start Production -->
+
+          <h2 id="production" class="mt-5">Production</h2>
+          <h4 id="production-1" class="mt-2">Design Elements</h4>
+          <ul>
+            <li>
+              Colour scheme
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #fff0cf"></span>
+                  #FFF0CF
+                  <em>This color is inspired by the soft and warm tones of some
+                    dog fur. The light beige also brings a sense of comfort
+                    and friendliness to the website. It creates a welcoming
+                    atmosphere, making visitors likable to use the services of
+                    the website.</em>
+                </li>
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #e47933"></span>
+                  #E47933
+                  <em>This vibrant color refers to the fur of certain dog
+                    breeds, adding a touch of energy to the palette. It gives
+                    a playful element into the design, that reflects to the
+                    active and lively nature of dogs and the positive
+                    experiences they bring to their owners.</em>
+                </li>
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #b6400e"></span>
+                  #B6400E
+                  <em>This deep orange color is similar to the light orange
+                    one. It adds depth and contrast to the palette by creating
+                    nice, colorful visuals. It is used to draw user's
+                    attention to some key elements of the website.</em>
+                </li>
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #94c1db"></span>
+                  #94C1DB
+                  <em>This color represents reliability and trustworthiness.
+                    It's purpose is to evoke feelings of security in the
+                    users. It conveys the message that Doggify can take care
+                    of the beloved pets with professionalism and
+                    competence.</em>
+                </li>
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #341f09"></span>
+                  #341F09
+                  <em>
+                    This color reflects to the deep tones of some dog breeds'
+                    fur. The deep brown color creates a nice contrast to the
+                    light and vivid colors of the palette.It also brings a
+                    sense of stability to the palette. It provides a strong
+                    foundation for the design, where it improves readability
+                    and overall contrast.</em>
+                </li>
+              </ul>
+            </li>
+            <li>Font choices</li>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <p>Body text</p>
+            <p>
+              Our typography is a nice mix between modern, playful fonts and
+              readible, sans-serif ones. For the headings (h1) and (h2) we
+              chose the Google font "Barrio". It perfectly aligns with the
+              personality of the brand, as we want to represent the cheerful,
+              active behavior of dogs. It also matches perfectly our
+              illustrations strategy. This combination of visuals creates a
+              pleasing cartoonlike image.
+            </p>
+            <p>
+              For the smaller headings (h3), (h4), and (h5) we used "Segoe UI"
+              font in bold verion, provided by Bootstrap. It is sans-serif
+              font that is easily readible. Its clean design is the perfect
+              choice for digital and screen-based content, just like our
+              website. For the body text we adopted the same font, "Segoe UI",
+              in regular and light version.
+            </p>
+            <li>
+              User interface patterns (e.g. grids, carousels, menu
+              organizations etc.
+            </li>
+            <p>
+              The grid system of the website consists of the twelve column
+              system of Bootstrap. In order to achive intersting web design,
+              we incorporated different UI elements. They include - multiple
+              types of cards, pop-ups, and accordion components. All of these
+              UI elements were taken from Bootstrap and were changed according
+              to our style guide.
+            </p>
+            <div class="col-lg-8 mx-auto">
+              <div class="hero-search p-4 gap-2 shadow">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-2">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="location" placeholder="Location" />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-2">
+                      <div class="form-group">
+                        <input type="date" class="form-control" id="dates" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12 mb-2">
+                      <div class="form-group">
+                        <select class="form-control" id="size">
+                          <option value="">Dog size</option>
+                          <option value="small">Small (1-10 kg)</option>
+                          <option value="medium">Medium (11-26 kg)</option>
+                          <option value="large">Large (27-45 kg)</option>
+                          <option value="large">Extra-Large (46+ kg)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-2">
+                      <div class="form-group">
+                        <select class="form-control" id="age">
+                          <option value="">Dog age</option>
+                          <option value="puppy">Puppy (0-1 years)</option>
+                          <option value="adult">Adult (2-8 years)</option>
+                          <option value="senior">Senior (9+ years)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-2">
+                      <div class="form-group">
+                        <div class="d-grid gap-2">
+                          <a class="btn btn-primary shadow" href="./find-sitter.html">Find a dog sitter</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-2 mt-2">
+              <div class="card p-4 d-flex flex-column justify-content-center align-items-center shadow">
+                <img src="images/dog-sitting.jpg" class="card-img-top mb-4" alt="cup" />
+                <div class="card-body">
+                  <a href="./offerings.html" class="btn btn-primary shadow">Daily sitting</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="card mb-3 mx-3 px-3 shadow">
+                <div class="row g-0">
+                  <div class="col-md-4 pt-3 pb-2">
+                    <img src="images/person-one.png" class="img-fluid rounded-start" alt="person" />
+                  </div>
+                  <div class="col-md-8 mt-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Marina Alfonso</h5>
+                      <p class="card-text">★★★☆☆</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#contactModal1">CONTACT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="display-5 fw-bold text-center mt-4 mb-4">
+              Frequently asked questions
+            </h2>
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is Doggify?
+                  </button>
+                </h5>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Having dogs can sometimes be a challenge, but it’s even
+                    harder to take proper care of them while navigating an
+                    entirely unknown Dutch setting. Believe us, we get it- the
+                    weather makes you sick, and suddenly no one can walk your
+                    bulldog, or you struggle to find your chihuahua a place to
+                    stay during your summer trip. This is why we created
+                    Doggify- a website that connects you to international dog
+                    guardians like you! With Doggify, you get to make a friend
+                    who can show you a new cool calming trick, or maybe even
+                    explore the Dutch landscape with you!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How much does Doggify cost?
+                  </button>
+                </h5>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Today, Doggify is your most affordable pet-sitting option.
+                    For just 20€ per month, you get access to owners who offer
+                    temporary housing or pet care services. Remember the last
+                    time you paid 50€ for an overnight stay for your dog?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Are the dog sitters reliable?
+                  </button>
+                </h5>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    We have carefully selected our sitters, making sure your
+                    dog will be in good hands. But hey, don’t just take our
+                    word for it- see for yourself! You can always contact an
+                    available dog-sitter in your area, and get to know them
+                    before trusting them with your furry friend. Subscribe to
+                    our website now and embark on a rewarding journey filled
+                    with mutual support!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li>
+              The structure of the <strong>navigation and content</strong>
+            </li>
+            <p>
+              The navigation structure of "Doggify" is designed to provide
+              users with an easy access to different sections of the site. The
+              first page that the users can access is the "Home page". There
+              are links to several pages. The comminuty of Doggify can be
+              reached by clicking the "Blog" link in the navigation bar. Users
+              are also able to create a profile in Doggify, or log in their
+              already existing ones. The profile is needed once the customer
+              has paid the suscribtion fee, so they can easily book a new
+              service.
+            </p>
+            <p>
+              Another section that can be discovered from the home page is the
+              "Find a dog sitter" page. First the user has to fill in their
+              details in the search bar, situated in the hero section. Then,
+              they will be redirected to the "Find a dog sitter" page, where
+              they will get results based on their filters. There they can
+              choose between different dog sitters. In case they want to
+              contact any of them, they have to click the "contact" button on
+              the sitter's profile. A pop-up with additional information about
+              the sitter appear. Then, the user can choose if they want to
+              book them or not. If yes, the user is redirected to the payment
+              page, where they can fill in their billing data.
+            </p>
+            <p>
+              Additionaly, users can learn more about Doggify's services from
+              the Home page. There is a section with information cards. Users
+              can learn more about each of the services by clicking on one
+              information card. When they click, the user will be redirected
+              to services information page.
+            </p>
+          </ul>
+          <h4 id="production-2" class="mt-2">Credits</h4>
+          <p>
+            Please provide links and/or credits for third-party elements
+            including:
+          </p>
+          <ul>
+            <li>
+              This template was only used to create the "Corporate" page: (<a
+                href="https://github.com/buas-media-interactive/prj4-group-template"
+                target="_blank">buas-media-interactive/prj4-group-template</a>)
+            </li>
+            <li>
+              Every item is taken ONLY from “Bootstrap” library (<a href="https://getbootstrap.com/docs/5.2/"
+                target="_blank">getbootstrap.com/docs</a>
+              )
+            </li>
+            <li>
+              Chat GPT was used once in order to explain how pop-ups (modals)
+              work. We asked it "How can I add modals from Bootstrap to my
+              website code?". Then. we used the java script and html for
+              modals from Bootstrap.
+            </li>
+            <li>
+              <strong>Images</strong> were taken from
+              <a href="https://www.freepik.com/">Freepik</a>.
+            </li>
+            <p>
+              <a
+                href="https://www.freepik.com/free-vector/national-dog-day-illustration_15272479.htm#query=dog%20illustration&position=10&from_view=keyword&track=ais&uuid=b19af60e-19d9-40c3-9dfd-3a25b8c37590">
+                Hero section illustration</a>
+              - this illustration was edited in order to match our style
+              guide. The composition of the illustration items was changed to
+              fit our hero section.
+            </p>
+            <p>
+              <a
+                href="https://www.freepik.com/free-vector/flat-design-pet-sitting-landing-page_31123681.htm#from_view=detail_alsolike">
+                Hero section paws illustration</a>
+              - only the paws were used to add up the dynamic of our main hero
+              section illustration. The color of the paws was changed to our
+              brand's style.
+            </p>
+            <p>
+              <a
+                href="https://www.freepik.com/free-vector/flat-background-international-dog-day-celebration_49191856.htm#page=2&query=dog%20illustration&position=11&from_view=keyword&track=ais&uuid=b19af60e-19d9-40c3-9dfd-3a25b8c37590">
+                Background illustration</a>
+              - this illustration was adjusted to our color palette. The
+              composition of the illustration was also edited.
+            </p>
+            <p>
+              <a
+                href="https://www.freepik.com/free-vector/dogs-breeds-flat-icons-collection-with-veterinary-kit-prize-winner-toy-bone-abstract-isolated-vector-illustration_4411497.htm#fromView=search&page=2&position=51&uuid=7263c86f-7d2a-48c2-839b-1ccc217a14fb">
+                Card illustrations</a>
+              - we used several of these icons. They were adjusted to the
+              color palette.
+            </p>
+            <p>
+              <a
+                href="https://www.freepik.com/free-vector/pack-avatars-different-people_7041832.htm#from_view=detail_alsolike">
+                Dog sitters profile illustration</a>
+              - we used multiple of these icons. They were adjusted to the
+              color palette.
+            </p>
+            <p>
+              Social media icons - Instagram and Facebook logos were created
+              by our team on Adobe Illustrator.
+            </p>
+            <p>
+              Checklist icons - these icons (can be found in the
+              <a href="./index.html">home page</a>) created by our team on
+              Adobe Illustrator.
+            </p>
+          </ul>
+          <h4 id="production-3" class="mt-2">Testing Report</h4>
+          <ul>
+            <li>
+              Your testing <strong>goals</strong> – in other words, what you
+              are trying to learn about your website?
+            </li>
+            <p>
+              Our testing had several goals. First, we wanted to learn if the
+              website delivers user-friendly experience. While we were
+              creating it, we wanted to achieve an easy to navigate design. As
+              our website has very clear goal - to find a dog sitter- we
+              wanted to know if the function is simple enough. Second, our
+              website has the goal to connect dog owners, especially
+              internationals in the Netherlands. By our research, we wanted to
+              check if our "Blog page" helps people connect, share experiences
+              and feel like part of a community. Finally, we wanted to achieve
+              a high-quality outcome, so the user testing had a goal to
+              guarantee an excellent product.
+            </p>
+            <li>
+              Your testing <strong>methods</strong>, which includes
+              information about:
+              <ul>
+                <li>
+                  The test’s <strong>participants</strong> (number, match with
+                  target audience, etc.)
+                </li>
+                <p>
+                  The testing was done with four participants. All of them are
+                  part of our target group - internationals and Dutch dog
+                  owners, aged above 18 years old. The people that took part
+                  in the testing were two Bulgarians, one Romanian, and one
+                  Dutch, aged 20, one 26, one 21 and one 28 accordingly. They
+                  are all owners of different kinds of dog breeds.
+                  Additionaly, all of the participants and currently living in
+                  the Netherlands.
+                </p>
+                <li>
+                  The test’s <strong>setting</strong> (which material is used,
+                  is it done remotely, on campus, at home, etc.)
+                </li>
+                <p>
+                  The testings were done in different ways. Three of them were
+                  done in person and one online, via Microsoft Teams. The ones
+                  that were conducted in person were done in various home
+                  locations. Three of the testings were conducted on a laptop
+                  and one on mobile phone. The questions were asked by one
+                  moderator.
+                </p>
+                <li>
+                  The test’s <strong>protocol</strong> (what instructions are
+                  given, how it is recorded, etc.)
+                </li>
+                <p>
+                  The testing started by asking each of the participants for
+                  approval to record. We voice-recorded all of the testings
+                  and took pictures of some of them. First we gave them a
+                  background information regarding our project:"For our
+                  university project, we, as second-year students studying
+                  Creative Business, have been assigned to develop a
+                  functional website targeted towards dog owners. One of our
+                  goals is to help internationals and Dutch dog owners to
+                  create a strong community and help each other."
+                </p>
+                <p>
+                  Then, we asked them to introduce themselves shortly - to say
+                  their name, age and nationality, so it can be clear that
+                  they are part of the target group. After that we asked them
+                  the following questions:
+                </p>
+                <p>
+                  What are your first impressions about this website?<br />
+                  Can you find a dog sitter and book them, based on you dog
+                  characteristics?<br />
+                  Can you find more info about dog walking?<br />
+                  Can you add a new article in the blog?<br />
+                  What are your overall thoughts about this website?<br />
+                  Is the website easy to use?<br />
+                  Is there something you would change?<br />
+                  Would you use it yourself?
+                </p>
+                <p>
+                  <strong>
+                    Based on the received answers we asked additional
+                    questions.</strong>
+                </p>
+              </ul>
+            </li>
+            <li>
+              Your testing <strong>results</strong>, which includes
+              information about:
+              <ul>
+                <li>
+                  Positive and negative aspects of the UI/UX that have been
+                  identified, ranked by importance.
+                </li>
+                <p><strong>Positive aspects</strong></p>
+                <p>
+                  1. Easy to navigate website - The participants found the
+                  website's structure clear and logical.
+                </p>
+                <p>
+                  2. Catchy, memorable design, in particular illustrations and
+                  colors - The participants found the design to be easy to the
+                  eye. They also made a remark that it reminds them of a dog
+                  personality.
+                </p>
+                <p>
+                  3. Provides people with any information related to dogs -
+                  that makes it encouraging for people to share resources.
+                </p>
+                <p><strong>Negative aspects</strong></p>
+                <p>
+                  1. The button "add an article" is hard to find - The
+                  participants couldn't see it at first.
+                </p>
+                <p>
+                  2. It is hard to tell if you add things successfully or not
+                  - When the participants tried to add article, comment,
+                  create a profile or sign in, there is no indication is it's
+                  successful.
+                </p>
+                <p>
+                  3. The is no profile page - after loging in/sign up the
+                  participants didn't know what happens with the profile.
+                </p>
+                <li>
+                  Improvements that have been implemented on the final website
+                  (or that would be implemented if doing so would be too
+                  complex)
+                </li>
+                <p>
+                  <strong>Implemented improvemnts</strong> - The button "Add an article" was adjusted to be bigger, so it's more noticable.
+                </p>
+                <p>
+                  <strong>Future implementations</strong> - Due to complexity limitations, the profile page and alerts will be added in the future.
+                </p>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- End Production, start Marketing -->
+
+          <h2 id="marketing" class="mt-5">Marketing</h2>
+          <h4 id="marketing-1" class="mt-2">
+            Context of campaign and promotional activities
+          </h4>
+          <h5>Introduction</h5>
+          <p>
+            Doggify is a website that connects dog owners in the Netherlands. The main function of the website is to
+            find suitable
+            pet-sitting options for the dogs of mainly internationals, but Dutch people are also welcome to join the
+            community. In
+            return for 20 Euro per month, the customers have access to dog owners that offer temporary housing or pet
+            care
+            services. In addition to this, useful information can be found through interaction between dog owners in the
+            form of a
+            blog. This information is related to breed-specific questions or common problems such as housing, relatable
+            to expats.
+          </p>
+          <h5>Vision</h5>
+          <p>
+            “In a world where emotional and practical support is rare to find away from home, we believe everyone
+            deserves
+            assistance in tough moments, because success is only built through teamwork.”
+          </p>
+          <h5>Mission</h5>
+          <p>
+            We as Doggify fight to make a drastic difference and reshape the idea of foreign big dog ownership, making
+            it not just barely manageable but truly rewarding.
+          </p>
+          <h5>Values</h5>
+          <p>
+            <strong>Community:</strong> We aim to create a safe space where expat dog owners can not only bond over
+            breed
+            specifics but, above all, find a sense of belonging and make long-lasting friendships among kindred spirits.
+          </p>
+          <p>
+            <strong>Empathy:</strong> We understand the challenges that foreigners face when bringing their furry
+            friends to a new country. Doggify is a platform that inspires them to connect and sympathize with each
+            other. Our approach is to address their various needs with genuine care, ensuring a welcoming experience
+            filled with understanding and warmth.
+          </p>
+          <p>
+            <strong>Shared Responsibility:</strong> We encourage big dog owners to actively contribute to the well-being
+            of the
+            community and its members. Doggify centers on collective action by offering dog care assistance, including
+            sitting and
+            walking, and sharing knowledge and resources.
+          </p>
+          <p>
+            <strong>Cultural Inclusivity:</strong> While Dutch organizations often use language and policies that
+            inadvertently
+            isolate internationals, at Doggify, we thrive in an international environment. Our platform welcomes all
+            Dutch
+            residents, regardless of background or origin, and deeply values diverse perspectives.
+          </p>
+          <p>
+            This report aims to define and explain the process of promoting the brand Doggify. It will describe in
+            detail all the
+            stages that the team went through to communicate persuasively the brand to its target audience.
+          </p>
+          <h5>Communication Message and objectives</h5>
+          <p class="fw-bold">Target audience</p>
+          <p>
+            Doggify’s target audience includes Gen X, Millennials, and Older Gen Z between the ages of 18-60. Doggify
+            is mostly orientated toward international expats living in The Netherlands and owning one or more than one
+            dog. While Dutch citizens are also welcome to join, we advertise the brand specifically as one tailored to
+            the needs of internationals. The reason is that when you search up other companies on the Internet like
+            <a href="https://www.petbnb.nl/">Petbnb</a>, <a href="https://www.pawshake.nl/">Pawshake</a>, etc., they are
+            all in Dutch. This
+            excludes a whole customer segment which makes up nearly 15% of the Dutch population, or 2.5 million people
+            in total (Netherlands, n.d.). 18% of Dutch households have a dog (GlobalPETS, 2023). This means that 450 000
+            expat dog owners in The Netherlands are not targeted with any specific brand/product yet. This gives us an
+            opportunity for a highly lucrative business.
+          </p>
+          <p>
+            What unites our target audience is dog ownership and migration from abroad. As we aim to create a community,
+            we will not segment that target audience per age and dog size/breed. We want the target audience to be broad
+            enough to be populated by the brand to as many customers as possible. This, however, means we have to take
+            into account all the differences between generations so we can advertise in the most effective way.
+          </p>
+          <p>
+            Ou (2020) discusses the different perceptions of the dog in different generations. Younger generations like
+            Millennials and Gen Z accept the dog as their child - preparation for their real child. While older
+            generations like Gen X consider the dog as a ‘’valued family member’’. All generations unite under the
+            benefit of the dogs as reducers of stress, loneliness, and anxiety. Based on the results of the research of
+            Megna (2024), Millennials and Gen X are leading in the percentage of pet owners, in contrast to Gen Z who
+            are in the last position after the Baby Boomers. Furthermore, Kelly (2024) discusses some of the reasons for
+            this result. According to her article, the current economy and job market are sources of anxiety for Gen Z.
+            Another reason is that some of the presenters of this generation are still studying at university which
+            leads to lower income. In most cases, they rent an accommodation. The rules of some landlords who don’t
+            allow pets, also influence the decision-making for Gen Z.
+          </p>
+          <p class="fw-bold">Generation X</p>
+          <p>
+            Generation X are born between 1965 and 1980, so they are around 50 years old. Kotler and Armstrong (2020)
+            describe this generation as skeptical buyers and not very easily influenced by marketing pitches. On the
+            other hand, they prefer quality over quantity. They also are very loyal customers once they find the brand
+            they like. Most Gen X are pet owners which can be explained because they are in their careers and many of
+            them own a home with a growing family. In other words, they have a stable lifestyle which led to taking care
+            of dogs. Also, most of the presenters of Gen X are parents of already grown-up children. Kretzler et al.
+            (2022) discusses the positive relationship between loneliness and pet ownership. That's the reason that some
+            Gen X's take dogs to not feel lonely after their children move away.
+          </p>
+          <p class="fw-bold">Millennials</p>
+          <p>
+            Millennials are born between 1981 and 1995, so most of them are in their 30s. Kotler and Armstrong (2020)
+            illustrate Millennials as a digitally comfortable generation. They are the first generation that grew up in
+            a fully digital world. That is the reason that they can easily engage with brands on social media. However,
+            due to rapid changes in the global economy, world events such as COVID-19, and several financial crises
+            throughout the years, only about a third of millennials globally are financially secure (Millennials Are
+            Falling Into a Depression Over Their Finances, 2023).
+          </p>
+          <p class="fw-bold">Generation Z</p>
+          <p>
+            Generation Z was born between 1996 and 2012, so the people who are included in the target audience would be
+            in their 20s. This is the generation that doesn’t know a world without the Internet. Hedges (2024) comments
+            that social media is central to the life of Gen Z people. They shape their perspective through social media
+            consumption. Some evidence for that is that “39% of Gen Z girls find shopping inspirations from social
+            media.” (Kotler & Armstrong, 1972). Another characteristic of Gen Z is their free spirit and sense of
+            exploration. Hedges (2024b) states that this generation likes to travel and it’s their priority compared to
+            previous generations. That makes it difficult for people of those ages to take care of a dog because
+            sometimes it’s difficult to travel with it or just to leave it to someone. Expect the unstable financial
+            state and living conditions, the urge for traveling explains the low percentage of dog owners amongst this
+            generation.
+          </p>
+          <p class="fw-bold">Platforms</p>
+          <p>
+            In 2024, there are estimated to be 5.04 billion total social media users worldwide” (Statista, 2024). The
+            image below illustrates this percentage compared to Internet users.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Social-media-users-table.png" style="max-width: 512px">
+          </div>
+          <p>
+            However, out of those 5.04 billion, Facebook is considered the most used social media worldwide. According
+            to Wiley (2022), 75% of Generation X use social media. The main preference amongst their presenters is
+            Facebook, followed by YouTube. On the other hand, ‘’Millennials are the most active demographic on social
+            media” (Zote, 2024). The top 3 most used social media platforms by this generation are Facebook, Instagram
+            and YouTube. Zote (2024) commented that Gen Z spent daily the most time out of all generations on social
+            media. They may have visited in the last few years TikTok the most, but as their favorite social media, they
+            chose Instagram.
+          </p>
+          <p class="fw-bold">Persona</p>
+          <p><a href="./corporate.html#persona">The persona that was created based on the research related to the target
+              group.</a></p>
+          <h5>Communication objectives</h5>
+          <p class="fw-bold">Reach Objective</p>
+          <p>
+            To create a community where international dog owners interact with each other we need at least 50-100
+            initial website users so this can be possible. A survey made by McKinsey showed that only 55% of all people
+            who engage with a service actually end up subscribing, so half of those engaged should also be subscribed to
+            our website (Ristagno, 2020).
+          </p>
+          <p>
+            This is why we aim to be seen by 800 people, 200 of whom are highly engaged with our content, so at least
+            50-100 of them will sign up for our website.
+          </p>
+          <p class="fw-bold">Affect</p>
+          <p>
+            We aim to create content that evokes certain emotional reactions in our target audience. We want them to
+            feel informed about the brand and be inspired by seeing a representation of them - expats with dogs. We want
+            to pique their curiosity about the brand. They need to feel certain that our brand is something that doesn’t
+            exist anywhere else because it is created specifically to help them and no one else. They need to feel like
+            they are part of a community of like-minded individuals, that they are always supported by this community,
+            and they can trust it, and that this is not just a money-oriented company but a platform where they finally
+            belong. They need to feel excited to make new friendships and exchange tips & tricks with other
+            international dog lovers.
+          </p>
+          <p>
+            Our team has produced those objectives based on the SMART method. Our goals are:
+          </p>
+          <p>
+            <strong>Specific:</strong> As mentioned, we have set a specific number of followers, engagement, reach, and
+            subscription, and trying to evoke certain emotions in customers.
+          </p>
+          <p>
+            <strong>Measurable:</strong> We aim to be seen by 800 people, 200 of whom are highly engaged with our
+            content, so at least 50-100 of them will sign up for our website.
+          </p>
+          <p>
+            <strong>Achievable:</strong> Our goals are realistic as they are not too high, and they are backed up by the
+            aforementioned sources.
+          </p>
+          <p>
+            <strong>Relevant:</strong> The mentioned emotional reactions we want to cause are tightly related to our
+            brand’s vision and values. Moreover, the number of followers, engagement, and reach we have set as an
+            objective will lead to people subscribing to our website. The visuals planned to be incorporated into the
+            social media content are stylistically similar to the overall look of the website.
+          </p>
+          <p>
+            <strong>Time-based:</strong> The end date of achieving our goals would be 1st April. Then we would start
+            analysing the data based on the content was created from the beginning of the accounts. After the data is
+            analysed, we would improve the campaign for the upcoming months.
+          </p>
+
+          <p class="fw-bold">Response</p>
+          <p>
+            We aim to make the target audience consume our content and actively engage with it- this means liking,
+            commenting, sharing, and reposting our publications. This leads to our ultimate objective - getting people
+            to sign up for Doggify’s website as a response to our content.
+          </p>
+
+
+          <h4 id="marketing-2" class="mt-4">Learning Points</h4>
+          <p>
+            Based on an almost 1-month social campaign that our team organized to raise awareness related to Doggify, we
+            can come
+            to several conclusions. Firstly, all objectives were reached so the campaign could be considered successful.
+            Furthermore, Facebook and Instagram profiles reach slightly more followers than it was set. Secondly, the
+            reach on
+            Facebook was bigger than on Instagram. The team did not expect that difference because of the popularity of
+            Instagram
+            among society. Moreover, it can be said that Facebook has a more precise algorithm on the base of the high
+            reach.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/facebook-reach.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/instagram-reach.jpg">
+            </div>
+          </div>
+          <p>
+            Thirdly, the team successfully justified the choice of social media platforms based on the age of the
+            target group. Younger audiences prefer Instagram and people above 35 years are more active on Facebook.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/facebook-age.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/instagram-age.jpg">
+            </div>
+          </div>
+          <p>
+            As a point of improvement, it can be mentioned in terms of the creation of content that more men must be
+            attracted to
+            the platform. It is visible that the main audience of the brand is women above 75% on both platforms. That
+            need to be
+            considered in the future planning of the brand.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/facebook-gender.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/instagram-gender.jpg">
+            </div>
+          </div>
+          <p>
+            To sum up, the social media campaign was considered as every member of the team as successful, but there is
+            always space
+            for improvement. That's way in the future we will try to increase the reach and the engagement of the users.
+            In
+            addition, the team would try to increase the engagement rate of men and balance the chart between both
+            genders.
+          </p>
+          <p>
+            We also learned that social media is quite unpredictable. We had carefully planned all posts beforehand and
+            some of them
+            were quite similar, but they had different outcomes. For instance, we posted two community videos on
+            Instagram. Their
+            content was quite similar, only different sounds. While one of them gained only 700 views, the other gained
+            1500+ views
+            and 100+ likes. We learned that sound usage is crucial in reel-making, and that original sounds tend to get
+            fewer views
+            rather than widely used ones.
+          </p>
+          <h4 id="marketing-3" class="mt-4">Future Planning</h4>
+          <p>
+            In the next stage of planning the content, we will take into account the posts had been planned but were
+            never
+            published, and the analysis of the data until this moment. Some of the posts that weren’t published are in
+            the picture
+            below.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Post-checklist.png" style="max-width: 512px">
+          </div>
+          <h5>Instagram Stories</h5>
+          <p>
+            In the future, the team will try to reach more and more users in Instagram through stories. Based on the
+            data of March – stories reach the least reach from users. In order to increase the viewing of Doggify's
+            stories, it would be created a quiz with interesting questions related to dogs. That would be fun and easy
+            way people to interact with our account. Some of the questions can be seen of the pictures below.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Instagram-reach-content.jpg">
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/quiz1.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/quiz2.jpg">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/quiz3.jpg">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/quiz4.jpg">
+            </div>
+          </div>
+          <div class="row mt-2 d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/quiz5.jpg">
+            </div>
+          </div>
+          <p>
+            Another way to attract more people to watch Doggify's stories would be to create a challenge where users
+            need to share their dogs on story and tag Doggify's account. Then more story viewings can be reached but
+            also, new followers can be attracted because of the snowball effect.
+          </p>
+          <h5>Live streams on Instagram with experts</h5>
+          <p>
+            The team of Doggify will make sequel of live streams every month on different topic related to dogs. In this
+            live stream professionals like vets, grooming experts and trainers will talk how dog owners can improve the
+            life of their dogs. Live streaming is the most authentic and transparent form of communication between the
+            brand and the audience. In addition, the live stream format is favoured by Instagram's algorithms. Doggify's
+            followers will receive notification that the live stream is started and also it will be on the first
+            positions of their feed.
+          </p>
+          <h5>Reels</h5>
+          <p>
+            Reels was the format that Instagram users engaged the most. Unfortunately, reels were the least content that
+            was created. That mistake will be repaired and in the next period would be created more reels. Some of the
+            reels would be with satisfied customers.
+          </p>
+          <h5>Events</h5>
+          <p>
+            On the 1st Birthday of the website, the team will organize an event where Doggify's community can see each
+            other face to face. This will strengthen the community as customers will be able to share information about
+            their dogs in person, and bond over all their similarities. There will be a Pookie Mascot as an already
+            recognizable member of this society. People will be able to take pictures with him. Also, there would be
+            many activities for both owners and dogs. After this big event, smaller events every few months.
+          </p>
+          <h5>Facebook</h5>
+          <p>
+            As it can be seen, Facebook users engage the most with single photo posts. That's why the marketing team
+            will try to keep this engagement and even increase it. We will avoid posting too many photos at once and
+            rather focus on just one picture.
+          </p>
+          <p>
+            Additionally, we will create a Facebook post where people can share their photos of their dogs in the
+            comment section. This, again, will show customers we are interested in them and their pets.
+          </p>
+          <h5>Instagram</h5>
+          <p>
+            Doggify’s Instagram followers engage the most with reels, and this is the content we posted the least on
+            this platform during this marketing campaign. To achieve more reach and active engagement, we will create
+            more reels with popular audio as original audio tends to attract fewer people.
+          </p>
+          <h5>Setting a precise time</h5>
+          <p>
+            As mentioned above, Doggify’s Facebook followers are the most active at 2-3 pm, and 8-10 pm. Doggify’s
+            Instagram followers are the most active after 8 pm. We will aim to post in those time frames during the day,
+            as by now, it is tested that we reach more people with this practice.
+          </p>
+          <h5>More frequent posting</h5>
+          <p>
+            So far, we have posted on average every other day. Posting every day will boost engagement even more, as
+            people will see our content more frequently. This is why we will aim for regular everyday posting.
+          </p>
+          </p>
+          <h5>Creating a Tiktok account</h5>
+          <p>
+            As reels produce a lot of reach and engagement, it would be a good idea to expand this video content to
+            TikTok, one of the most trending social media among young people.
+          </p>
+          <h5>Diving deep into the target audience</h5>
+          <p>
+            After users sign up on the website, they will provide useful data at the time of their registration, such as
+            dog size, dog age, and living areas in the Netherlands. Based on this, we will be able to analyze the data
+            and conduct more specific research on our target audience. We will then be able to segment based on those
+            characteristics and tailor our content to target those owners specifically, knowing their habits and needs.
+          </p>
+
+
+
+          <h4 id="marketing-4" class="mt-4">Professionalism</h4>
+          <p>
+            The team chooses to promote Doggify on Facebook and Instagram. Instagram’s growth remains steady compared to
+            other social media platforms. Dean (2024) explains that Instagram has more monthly active users than TikTok
+            - 2 billion out of which the largest age group is 18-24 years old (Generation Z). In addition, Instagram's
+            engagement rates are more than 4 times higher than Facebook's.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Social-media-engagement-rate.jpg"
+              style="max-width: 512px">
+          </div>
+          <p>
+            On the other hand, as was mentioned in the previous paragraph Gen X and Millennials are more engaged on
+            Facebook while younger users from Gen Z prefer Instagram. Furthermore, according to West and West (2024),
+            Instagram and Facebook are both platforms with the highest ROI (Return on Investment).
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Social-media-ROI-table.jpg" style="max-width: 512px">
+          </div>
+          <p>
+            After the team chose social media through which Doggify will be promoted, several precise objectives for
+            each platform were set. They are based on our aforementioned communication objectives.
+          </p>
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th class="text-center" colspan="2">Facebook</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Followers</td>
+                <td>150 accounts</td>
+              </tr>
+              <tr>
+                <td>Reach</td>
+                <td>400 accounts</td>
+              </tr>
+              <tr>
+                <td>Engagement</td>
+                <td>100 accounts</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th class="text-center" colspan="2">Instagram</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Followers</td>
+                <td>150 accounts</td>
+              </tr>
+              <tr>
+                <td>Reach</td>
+                <td>400 accounts</td>
+              </tr>
+              <tr>
+                <td>Engagement</td>
+                <td>100 accounts</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Planning</h5>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/content-calendar-1.png">
+          </div>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/content-calendar-2.png">
+          </div>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/content-calendar-3.png">
+          </div>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/content-calendar-4.png">
+          </div>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/Post-checklist.png" style="max-width: 512px">
+          </div>
+          <h5>Execution</h5>
+          <p>
+            The social media campaign was conducted on Facebook and Instagram. Diverse types of content were posted to
+            understand better the interests of Doggify’s audience.
+          </p>
+          <p>
+            Also, the content was published at different times of the day so the team could analyze at a later stage
+            which time is the best to publish content. Moreover, the content is consistent. It uses the same types of
+            illustrations and color schemes as Doggify’s website, so that a clear brand image is created, making Doggify
+            more memorable and recognizable for the target audience.
+          </p>
+          <a href="https://www.facebook.com/doggify.nl" target="_blank">Link to Doggify's Facebook page here.</a>
+          <br>
+          <a href="https://www.instagram.com/doggify_nl" target="_blank">Link to Doggify's Instagram page here.</a>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/feed.jpg" style="max-width: 512px">
+          </div>
+          <p>
+            In the next lines, key strategies that were used during the campaign are explained.
+          </p>
+          <h5>Mascot</h5>
+          <p>
+            Inspired by some big brands like Kinder Pinguin, Nesquik, and HUB’s Buzz, we created our brand mascot –
+            Pookie. Our team created Pookie for the audience to memorize better the brand. Most marketers use mascots
+            for better brand awareness which is our brand’s communication objective. It draws the attention of the
+            audience positively and even can provoke emotion which forms an emotional attachment to the brand. In a
+            later stage, mascots can increase customer loyalty (Tycoon Success Business Magazine, 2024).
+          </p>
+          <p>
+            Additionally, we created a short funny Instagram and Facebook commercial with our mascot. This commercial
+            aimed to pique the target audience’s curiosity, boost engagement, and evoke positive feelings.
+          </p>
+          <a href="https://www.facebook.com/reel/2427079700825491" target="_blank">Link to commercial here.</a>
+          <h5>Community reels</h5>
+          <p>
+            Creating reels was part of our campaign for several reasons. Firstly, it could reach a large number of
+            viewers and attract more followers. Even if the brand has a low following thanks to the algorithm the reel
+            can reach a wider audience (OPA Marketing, n.d.). That leads to better brand awareness and better traffic to
+            the account. Secondly, our team created reels that describe the connection between our customers and their
+            dogs. That creates a better image of the brand because we engage our customers in our campaign not just
+            record some models. In addition, the reels can evoke emotions of community, our main value, in the audience.
+          </p>
+          <a href="https://www.instagram.com/reel/C5G_tt1qN8E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank">Link to example reel here.</a>
+          <br>
+          <a href="https://www.facebook.com/reel/455192583523964" target="_blank">Example reel 2 here.</a>
+          <br>
+          <a href="https://www.instagram.com/reel/C4vkZnRqcBT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank">Example reel 3 here.</a>
+          <h5>Associating with similar brands</h5>
+          <p>
+            At some point in the campaign, Doggify was promoted from a similar brand for dog services. That was a good
+            act for the brand image to be associated with a bigger brand. Also, it attracts more followers for both
+            parties, therefore it is better for creating a community.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/story-advertising.PNG" style="max-width: 512px">
+          </div>
+          <h5>Giveaway</h5>
+          <p>
+            Doggify’s giveaway was in the form of 3 months free subscription and a Pookie plushie. The giveaway was
+            created to increase the followers and engagement of the brand. While the other post users could scroll and
+            just see it, if they participate, they need to put more effort into following the account, like the post,
+            and tag a friend in the comments section. In addition, this increases brand awareness because they tag
+            friends which leads to a snowball effect.
+          </p>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/giveaway.PNG" style="max-width: 512px">
+          </div>
+          <h5>Getting to know the target audience</h5>
+          <p>
+            We posted stories on both Facebook and Instagram which included questions about our customers - how often
+            they travel, what size their dog is, etc. We did this for three reasons. Firstly, this creates more
+            engagement as the target audience will click on an option in each poll. Secondly, this is good for our brand
+            image as it has a personal note- when the target audience notices we are interested in them as individuals,
+            they are way more likely to engage with the brand and buy its products. This is also tightly connected to
+            our main objective-building a sense of community. Thirdly, the results from those polls helped us analyze
+            our target audience and the viability of the website.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-1.PNG" style="max-width: 512px">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-2.PNG" style="max-width: 512px">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-3.PNG" style="max-width: 512px">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-4.PNG" style="max-width: 512px">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-5.PNG" style="max-width: 512px">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img class="img-thumbnail" src="./images/marketing/get-to-know-6.PNG" style="max-width: 512px">
+            </div>
+          </div>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/get-to-know-7.PNG" style="max-width: 512px">
+          </div>
+          <p>
+            The results were quite similar to the findings from the problem and solution interviews- most international
+            dog owners have a busy schedule, travel relatively often, and need pet-sitting services once a week. This is
+            a good sign for our product, as it is something that the target audience actually needs.
+          </p>
+          <p>
+            Moreover, we made an Instagram and Facebook story where the target audience could ask us questions. This
+            aimed to alleviate the experience for the target audience as communication was now two-sided- we are not
+            only interested in them, but we also are open to listening and communicating with them. This two-sided
+            communication helps build a sense of community. The questions asked were subsequently answered through a
+            Facebook and Instagram post, and later added as a “Frequently asked questions” section Doggify’s website.
+          </p>
+          <a href="https://www.facebook.com/doggify.nl/posts/pfbid02MeH1KKScVVvvUk8LrDhpUCcrosBMGqPMdRnzaDuERdHycWMjBnjTh3C7yuXEEAKHl"
+            target="_blank">Link to answered question post.</a>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/ask-us.PNG" style="max-width: 512px">
+          </div>
+          <h5>Use of hashtags</h5>
+          <p>
+            On each Facebook and Instagram post, we took advantage of using hashtags so we can boost our reach. We
+            created #doggify and used it on each post so we can establish the brand in social media. This way, we can
+            connect with our audience more easily, get discovered by new potential fans, and track and curate what
+            people are posting about our brand (Gillian, 2024).
+          </p>
+          <p>
+            Moreover, we added widely used hashtags such as #dog #dogs #doglover #petlovers #pets #brand #community
+            #doggify #netherlands
+          </p>
+          <h5>Use of locations</h5>
+          <p>
+            To attract potential customers from The Netherlands, we used location tags for different regions, such as
+            Amsterdam or Breda on both Instagram and Facebook posts. We also used the general tag The Netherlands.
+            Location tags are known to boost posts’ reach and increase engagement (Location Tags and Geotagging for
+            Discoverability - FasterCapital, n.d.).
+          </p>
+          <h5>Raising awareness</h5>
+          <p>
+            To fulfill this objective, we created informative Instagram and Facebook posts, where we explained the
+            purpose of the brand, its features and price, we pointed out our competitive advantage, shared our vision,
+            and shared our values. This way, our target audience is gradually getting to know us better so they can
+            build trust in the brand.
+          </p>
+          <h5>Creating anticipation</h5>
+          <p>
+            Creating anticipation in the target audience is crucial as this makes people constantly come back and check.
+            In our case, we aimed to create anticipation for the launch of our website. From creating “Coming soon”
+            Instagram and Facebook posts to Countdown posts and stories you can add to your calendar, we wanted to make
+            our potential clients curious and make the launch of our website a big event that is talked about a lot.
+          </p>
+          <a href="https://www.facebook.com/doggify.nl/posts/pfbid02jJC9Zztpk9gGVV8i1dced6EdXP5xbtekTodj8GrZJyK3eoNymgwkj3QpsL6DVUcHl"
+            target="_blank">Coming soon post here.</a>
+          <br>
+          <a href="https://www.instagram.com/p/C5CFfzXqGim/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank">Countdown post here.</a>
+          <div class="text-center">
+            <img class="img-thumbnail" src="./images/marketing/save-the-date.jpg" style="max-width: 512px">
+          </div>
+          <h5>Face behind the brand</h5>
+          <p>
+            In order to create a sense of community and again, a feeling of personalization and two-sided communication,
+            we made an Instagram and Facebook post where our team was introduced. Adding a human face also makes the
+            brand more recognizable, humanizes the buying process, and overall makes the brand more trustworthy
+            (Schwartz, 2021).
+          </p>
+          <a href="https://www.instagram.com/p/C4q6bDmKeib/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank">Link to introduce-the-team post here.</a>
+          <h5>Interesting facts</h5>
+          <p>
+            To pique the target audience’s interest and to establish the brand as one providing knowledge and useful dog
+            tips and tricks, we created an Instagram and Facebook post with curious facts about dogs.
+          </p>
+          <a href="https://www.facebook.com/doggify.nl/posts/pfbid0vHyrcoSorNjd8CQGtTdqWm9va7Yju1XPprRVxe5v6vmXdkh2h4q8RoEjDYXzpMa8l"
+            target="_blank">Link to the post here.</a>
+          <h5>Data Analysis</h5>
+          <p>
+            After the social media marketing campaign is over, we can now analyze the data we received from both social
+            media channels.
+          </p>
+          <h5>Facebook</h5>
+          <p>
+            On Facebook, Doggify’s account has reached 4,025 people, an impressive 10 times more than our objective.
+          </p>
+          <p>
+            1,459 of this reach are accounts actively engaging with the brand’s posted content. This is 15 times more
+            than our set objective. As mentioned above, 55% of all people who engage with a service actually end up
+            subscribing, so half of those engaged should also be subscribed to our website (Ristagno, 2020). This makes
+            Doggify’s potential subscribers shortly after its launch amount to 803, 8 times more than the expected
+            initial 100 website subscribers, coming only from one platform.
+          </p>
+          <p>
+            Doggify’s Facebook followers amount to 234, 84 above the objective. 74.9% of them are women, while only
+            25.1% of them are men. 19.2% are aged 18-24, 20.1% of them are aged 25-34, 28.8% of them are aged 35-44, and
+            25.4% are aged 45-54.
+          </p>
+          <p>
+            The target audience is the most engaged content posted in the form of a single photo.
+          </p>
+          <p>
+            Doggify’s Facebook followers are the most active at 2-3 pm, and 8-10 pm. At this time, we can notice the
+            most reach and engagement compared to other times of the day.
+          </p>
+          <h5>Instagram</h5>
+          <p>
+            On Instagram, Doggify’s account has reached 1,917 people, 5 times more than our objective.
+          </p>
+          <p>
+            1,070 of this reach are accounts actively engaging with the brand’s posted content. This is 10 times more
+            than our set objective. This makes Doggify’s potential subscribers shortly after its launch amount to 55% of
+            them, which is equal to 589, 6 times more than the expected initial 100 website subscribers, coming only
+            from one platform.
+          </p>
+          <p>
+            Doggify’s Instagram followers amount to 155, just 5 above the objective. 77.4% of them are women, while only
+            22.5% of them are men. 66.1% are aged 18-24, 23.7% of them are aged 25-34, 4.5% of them are aged 35-44, and
+            2.5% are aged 45-54.
+          </p>
+          <p>
+            The target audience is the most engaged content posted in the form reels. </p>
+          <p>
+            Doggify’s Instagram followers are the most active after 8 pm. At this time, we can notice the most reach and
+            engagement compared to other times of the day.
+          </p>
+
+          
+
+          <!-- End Marketing, start Management -->
+
+          <h2 id="management" class="mt-5">Management</h2>
+          <h4 id="management-1" class="mt-2">Lean Canvas</h4>
+          <p>
+            See Appendix for Lean Canvas one and two
+          </p>
+          <p>
+            See Appendix for refrences
+          </p>
+          <li>
+            <a href="https://" target="_blank">Lean Canvas #2</a>
+            <img class="img-fluid" src="images/lean-canvas-three.jpg" alt="lean-canvas" />
+          </li>
+          <p class="fw-bold">Problem</p>
+          <ul>
+            <li>
+              <strong>Lack of trust-worthy people who would take care of the
+                dog:</strong>
+              Consumers are the most concerned with finding someone to take
+              care of their dog when they are away from home, sick, or with
+              extremely busy schedules.
+            </li>
+            <li>
+              <strong>Feeling of loneliness:</strong> No specialized
+              communities here in the Netherlands where internationals can
+              share, exchange, and socialize regarding their dogs. Either for
+              daily dog activities or struggles.
+            </li>
+            <li>
+              <strong>Finding accommodation:</strong> Typical Dutch rental
+              properties prohibit pets, which drastically restricts the
+              options for dog owners to find accommodation.
+            </li>
+            <li>
+              <strong>Language barrier in pet-sitting services:</strong>
+              Internationals are unable to fully engage or understand the
+              all-in Dutch dog services as they haven’t learned Dutch yet.
+              This makes their accessing potential solutions hard to make use
+              of.
+            </li>
+          </ul>
+          <p class="fw-bold">Solution</p>
+          <ul>
+            <li>
+              <strong>Create a blog function where customers can share their
+                struggles, and others can offer solutions, including providing
+                them with resources about pet-friendly rental
+                properties:</strong>
+              This feature would allow for an exchange of valuable information
+              and experiences among pet owners, helping them navigate the
+              challenges of finding pet-friendly accommodations and other
+              dog-related issues.
+            </li>
+            <li>
+              <strong>Establish specialized dog owner communities where everybody
+                feels welcome and deeply values diverse perspectives:</strong>
+              Such communities would foster a sense of belonging and support
+              among dog owners, encouraging the sharing of advice,
+              experiences, and resources that cater to the unique needs of
+              diverse dog owners.
+            </li>
+            <li>
+              <strong>A dog community platform entirely in English, ensuring
+                inclusivity and ending any uneasiness of feeling left out due
+                to a language barrier:</strong>
+              By providing a platform in English, internationals and non-Dutch
+              speakers can fully participate and benefit from the community,
+              ensuring that information and support are accessible to
+              everyone, regardless of their language proficiency.
+            </li>
+          </ul>
+          <p class="fw-bold">Customer segments</p>
+          <ul>
+            <li>
+              <strong>Foreign expats with one or multiple dogs living in the
+                Netherlands. All ages:</strong>
+              This target group includes internationals from various
+              backgrounds and ages, all sharing the commonality of living in
+              the Netherlands with their canine companions.
+            </li>
+            <li>
+              <strong>Owners of all types of breeds – small, medium-sized, and
+                big:</strong>
+              The service or product caters to dog owners regardless of the
+              breed size, ensuring inclusivity and versatility in addressing
+              the needs of all dogs.
+            </li>
+            <li>
+              <strong>Brand Persona: Gergana is a 28-year-old expat in the
+                Netherlands:</strong>
+              She has a very busy schedule due to her job as a nurse at
+              Erasmus University Medical Center. Despite having a relatively
+              small circle of friends, she is an outgoing person. Describing
+              herself as a creative and active person, one of Gergana’s
+              biggest strengths is her organization skills which allows her to
+              manage her time effectively amidst her busy lifestyle with a
+              packed agenda. Teamwork is not something unusual to her, and she
+              works effectively with other people. Gergana prioritizes safety
+              rather than taking risks.
+            </li>
+            <li>
+              <strong>This excludes a whole customer segment which makes up nearly
+                15% of the Dutch population, or 2.5 million people in total
+                (Netherlands, n.d.). 18% of Dutch households have a dog
+                (GlobalPETS, 2023):</strong>
+              This means that 450,000 expat dog owners in The Netherlands are
+              not targeted with any specific brand/product yet. This gives us
+              an opportunity for a highly lucrative business.
+            </li>
+          </ul>
+          <p class="fw-bold">Unique value proposition</p>
+          <ul>
+            <li>
+              <strong>International Friendly:</strong> Compared to other
+              pet-sitting companies especially dog ones in the Netherlands,
+              our services and the information we provide our customers with
+              are entirely in English. Whereas when you search for other
+              companies on the internet like Petbnb, Pawshake, etc. they seem
+              to be in Dutch which makes the experience for internationals
+              even harder.
+            </li>
+            <li>
+              <strong>Easy-to-use subscription model:</strong> It sets us
+              apart, as we understand that convenience is important and that’s
+              why we’ve used a very simple and hassle-free subscription model.
+              With just a few clicks, you can be a member and start enjoying
+              our services without any difficulties.
+            </li>
+            <li>
+              <strong>Creating a community:</strong> What truly sets us apart
+              is that we are committed to creating a community where dog
+              owners feel free, helpful, and a sense of belonging. This
+              community will offer you a space where you can connect with
+              like-minded individuals all in English, so no discrimination.
+            </li>
+          </ul>
+          <p class="fw-bold">Unfair advantage</p>
+          <ul>
+            <li>
+              <strong>Networking Opportunities:</strong> We can easily target
+              international communities in the Netherlands such as Romanian,
+              Bulgarian, Hungarian, etc. as those people have already formed
+              close circles, and societies and are open to international
+              services.
+            </li>
+            <li><strong>Diverse Environment</strong></li>
+            <li>
+              <strong>Specialized Services:</strong> Dog walking, daily visits
+              and sittings, overnight sitting.
+            </li>
+            <li>
+              <strong>Blog Function:</strong> A space where everybody is free
+              to ask their questions to like-minded individuals with the same
+              issues, and have an opportunity to add an article of his own to
+              a topic related to dogs.
+            </li>
+          </ul>
+          <p class="fw-bold">Channels</p>
+          <ul>
+            <li>
+              <strong>Social Media - Focus on Instagram and Facebook only:</strong>
+              Prioritizing these platforms for their widespread use and
+              engagement among our target audience.
+            </li>
+            <li>
+              <strong>Daily Posts and Interactive Stories:</strong> Where we
+              ask for their feedback and questions to foster a strong,
+              interactive community engagement.
+            </li>
+            <li>
+              <strong>Giveaway of the Toy Mascot:</strong> Engaging our
+              audience with the giveaway of our toy mascot to increase
+              interaction and visibility.
+            </li>
+          </ul>
+          <p class="fw-bold">Key metrics</p>
+          <ul>
+            <li>
+              <strong>Instagram:</strong>
+              <ul>
+                <li>
+                  In the last one month, the amount of accounts we’ve reached
+                  is 1,917. In total we’ve gained 155 followers with the most
+                  audience reach in the Netherlands.
+                </li>
+                <li>
+                  The main age range is people between 18 and 44, with the
+                  biggest percentage of 66.1% in the age range 18-24.
+                </li>
+                <li>We’ve reached 77.4% women and 22.5% men.</li>
+                <li>The engagement is 1,070.</li>
+                <li>Impression in total: 5,557</li>
+                <li>
+                  By content type:
+                  <ul>
+                    <li>Posts: 813</li>
+                    <li>Stories: 133</li>
+                    <li>Reels: 1,567</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Facebook:</strong>
+              <ul>
+                <li>Engagement: 1,459</li>
+                <li>Reach: 4,025</li>
+                <li>
+                  Audience is 76.7% women, and 23.3% men, mainly from the
+                  Netherlands.
+                </li>
+                <li>Followers: 234</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="fw-bold">Revenue streams</p>
+          <ul>
+            <li>
+              An assumption of 8,342 subscribers for a year. See
+              <strong>Validations of Assumptions page</strong> for validation
+              of subscribers.
+            </li>
+            <li>
+              <strong>Subscription Fees Model: </strong>It’s generated by
+              selling continuous access to dog-care services. For a 20€ per
+              month subscription fee, dog owners get access to owners who
+              offer temporary housing or pet care services. Then the
+              subscription revenue will be 8,342 x €20 x 12 = €2,002,080 per
+              year.
+            </li>
+            <li>
+              <strong>Advertising:</strong> Fees for advertising the brand.
+              Through social media channels like Facebook and Instagram, we
+              will display targeted advertisements and get income for
+              pay-per-click advertisements. Per each click, we will get a
+              certain amount of money. Based on research, we can earn €1,000
+              each month from advertisement (Sabina, 2023). In one year it
+              makes €12 x 1,000 = €12,000.
+            </li>
+            <li>
+              <strong>Merchandise Sales:</strong> In total, we will have
+              revenue of €76,450 for a year from dog merchandise. For a clear
+              justification of this number see the Validation of Assumptions
+              page.
+              <ul>
+                <li>Clothing: €20,- (1,390x€20=€27,800)</li>
+                <li>Toys: €10,- (1,390x€10=€13,900)</li>
+                <li>Collars and leashes: €25,- (1,390x€25=€34,750)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Event Hosting:</strong> We will organize dog-related
+              events like workshops, seminars, etc. There we will charge an
+              entrance fee and arrange sponsorships from local businesses.
+              When we organize two events with an entrance fee of €20 and
+              assume 3,500 people attend then it calculates to €70,000 per
+              event, so it’s €140,000 from events per year.
+            </li>
+          </ul>
+          <p>
+            Overall the estimated revenue for the first year will be around
+            €2,230,530.
+          </p>
+          <p class="fw-bold">Cost structure</p>
+          <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Fixed Costs</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Variable Costs</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Developing/maintaining the website</td>
+                <td>€8,000 (Lukasz, 2023)</td>
+                <td>Advertising/Marketing costs</td>
+                <td>€500 per month; €6,000 per year</td>
+              </tr>
+              <tr>
+                <td>Rent for office</td>
+                <td>€150x12=€1,800 (Skepp, n.d.)</td>
+                <td>Merchandise costs</td>
+                <td>
+                  25% from the Merchandise revenue: 25% of €76,450 = €19,112
+                </td>
+              </tr>
+              <tr>
+                <td>Utilities and internet</td>
+                <td>€340x12=€4,080 (Rickinson, 2023)</td>
+                <td>Event expenses</td>
+                <td>
+                  €3,750 per event, so €7,500 for both events (incl. venue,
+                  food, drinks, entertainment) (Holmes, 2019)
+                </td>
+              </tr>
+              <tr>
+                <td>Salaries</td>
+                <td>
+                  €38,000 per year per person, so €38,000x4=€152,000 (Brand
+                  Manager Salary in Netherlands in 2024 | PayScale, n.d.)
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Insurance</td>
+                <td>€57 per month = €57x12= €684 (Horton, 2024)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Legal services</td>
+                <td>€2,300 (NordicHQ, 2023)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Equipment (laptops)</td>
+                <td>€3,916 (MediaMarkt)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><strong>In total</strong></td>
+                <td><strong>€172,780</strong></td>
+                <td><strong>In total</strong></td>
+                <td><strong>€32,612</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Cost per unit = total fixed cost + total variable cost / total
+            number of the units produced (subscribers)
+          </p>
+          <p class="text-center">
+            = €172,780 + €32,612 / 8,342 = €205,392 / 8,342 = €24.63
+          </p>
+          <p class="fw-bold">Services/products</p>
+          <p>
+            Doggify is a website that connects all the international dog
+            guardians in the Netherlands. For just 20 per month, dog owners
+            get access to owners who offer temporary housing or pet care
+            services. The best part is that dog owners get to make a friend
+            who can show them a new cool calming trick, or maybe even explore
+            the Dutch landscape with them. It’s all about community!
+          </p>
+
+          <p>
+            It contributes to the value proposition specifically because of
+            customization. Our product is precisely tailored to the specific
+            needs of our target audience. After conducting several interviews
+            and research on the topic, we concluded that international dog
+            owners in the Netherlands don’t have a community where they could
+            share their challenges, and seek mutual support regarding their
+            dog. It gives a helpful solution to their worries, and we’ve taken
+            into account many of them to create Doggify and make it as useful
+            as possible.
+          </p>
+
+          <p>
+            The fit between the product and the brand identity is deemed
+            strong. After conducting all of the interviews, all of the
+            interviewees found Doggify unique and helpful for every
+            international dog owner who struggles with finding a suitable dog
+            daycare, or just a friend with whom they could share the same
+            experience/challenges. They all thought that Doggify evokes a
+            sense of community and inclusivity with its blog feature, and
+            “English only” policy. Doggify’s brand identity represents exactly
+            that. All of our interviews revealed that people are excited about
+            the launch of the website, and would love to use it one day, as it
+            solves a lot of their challenges like finding someone to take care
+            of their dog while they’re on holiday, back home, or just having a
+            busy daily life, and don’t have time to walk their dog. In
+            conclusion, we can say that Doggify perfectly aligns with their
+            needs and preferences.
+          </p>
+          <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
+          <h5>Assumptions</h5>
+          <p>
+            1. <strong>Subscribers for the next one year</strong> – 8,342: As
+            the engagement is more important than followers and people who
+            engage rather than just follow are more likely to subscribe we’ll
+            use these metrics to assume how many subscribers we’ll have by the
+            end of the year. As the engagement in Facebook and Instagram is
+            almost the same and an average of 1,264, then for a year it’s
+            12x1,264=15,168. A survey made by McKinsey showed that only 55% of
+            all people who engage with a service actually end up subscribing,
+            so half of those engaged should also be subscribed to our website
+            (Ristagno, 2020). For us this means, that it’s 55% of 12,000 =
+            8,342 subscribers.&nbsp;
+          </p>
+          <p>
+            <br />
+            2.<strong> Revenue Streams:</strong> Merchandise Sales: Pet merch
+            is a new trend that is developing more and more. After the
+            pandemic people started adopting more and more, and according to
+            statistics pet merch saw an increase of 1 Billion dollars annually
+            (Industries, 2023). We’re all aware and it’s been proven that
+            pet-owners love buying toys and clothing for their dogs. Trough
+            selling branded merchandise we will stream revenue. It will be
+            related to our dog care service and with our mascot visualized on
+            it, such as dog clothes, toys, leashes, etc. This will also serve
+            as a promotional tool and will be a direct sale. Research has
+            shown that pet-owners love buying clothes for their pets, and 83%
+            of Millennials are likely to spend money on merchandise for pets
+            (Danziger, 2021b). Keeping in mind that our target audience
+            doesn’t target a specific age group, and then we can assume that
+            50% of our subscribers would be willing to pay for that.
+            Consequently, 4,171 people will purchase at least one merchandise
+            item, so 1,390 people per each item.
+          </p>
+          <p>
+            <br />
+            <strong> Merch price we’ve agreed upon after researching</strong>:<br />
+            -Clothing: €20,- (1,390x€20=€27,800)<br />
+            -Toys: €10,- (1,390x€10=€13,900)<br />
+            -Colars and leashes: €25,-(1,390x€25=€34,750)<br />
+            <strong>In total:</strong> €76,450&nbsp;
+          </p>
+          <p>
+            <br />
+            <strong>Conclusions interviews&nbsp;</strong>
+          </p>
+          <p>
+            <strong>&nbsp;</strong>All of the interviewees fit our brand
+            persona. They’re all international dog owners living in the
+            Netherlands, between the ages of 20 and 41, so we cover a big age
+            group. They’re nationalities vary from Bulgarians, Romanians,
+            Serbian, Slovenian, Belgium, etc.
+          </p>
+          <p>
+            <br />
+            <strong> Problem interviews&nbsp;</strong>
+          </p>
+          <p>
+            <b>&nbsp; </b>They all face similar problems – from struggling to
+            find a place for their dog to stay when they’re traveling, to
+            challenges to find other international dog owners, and befriending
+            them. They all need support from people with a mutual lifestyle
+            and also wish that there is a space where they can exchange tips
+            and tricks regarding their dogs, and have trust in the people
+            they’re leaving their dogs at. Other than that they want to
+            socialize and be a part of something, because they’re usually with
+            a very busy schedule and don’t have time to go out and meet new
+            people. As they’re internationals and their main communication
+            language here is English, they often face challenges with
+            pet-sitting websites as many of them are in Dutch, and even if
+            they also have an English version, most of the people there are
+            older and speak only Dutch.
+          </p>
+          <p>
+            &nbsp; <br />
+            <strong>Solution interviews&nbsp;</strong>
+          </p>
+          <p>
+            <b>&nbsp;</b> When doing the solution interviews, we got feedback
+            on our demo, and potential ideas for changes on the real product.
+            While facing some challenges while navigating the website, they
+            still thought that it’s easy to use and provides a lot of the
+            needed information. The overall opinion is that they find the blog
+            page hard to navigate, that some of the buttons were not available
+            for example “add comment”, or finding where to ask questions.
+            Those were little details that didn’t really bother their overall
+            opinion and navigation through the website. The colors they
+            associate with the website are either light brown or dark
+            brown-ish, with the reason that they think of many dogs’ fur.
+            Several also mentioned the color blue, which they associate with
+            safety because they want to feel safe when they leave their dog
+            with someone else. The interviewees think that the subscription
+            fee is too low, and that we should increase it. The overall
+            opinion is that the website provides people with something that is
+            not yet on the market and that they would use it.&nbsp;
+          </p>
+          <p>
+            <br />
+            <strong> Pivot</strong>&nbsp;
+          </p>
+          <p>
+            Our subscription price at first was €10. We thought that as a new
+            brand going on the market, we shouldn’t start with a high
+            subscription fee. As an unknown brand, we think that we still
+            don’t have the audience’s trust and support and that we need to
+            prove ourselves as worthy and qualitative of their trust and
+            finances. During the testing of our MVP and the interviews, all of
+            us were met with a totally different perception of the audience.
+            Their opinion was that with all of the options, and opportunities
+            we give to international dog owners in the Netherlands, we should
+            charge an average of €30 to €40. Considering how expensive only a
+            night stay for dogs at specialized hotels is, they think that a
+            higher price is more suitable. Many internationals need our
+            service, and the inclusivity we promote, so in their opinion
+            increasing the price won’t make the chances for more subscribers
+            low. We decided that it’s best to increase the price by €10, and
+            make it €20, and not be as cheap. This will also help our revenue
+            streams because as a new brand, we can never be sure of all the
+            costs that we will have on the way. During our Production user
+            testing, we increased the price, and all the testers didn’t mind
+            the price of €20 per month. They were satisfied with the result
+            and thought it was the perfect fit for price quality.
+          </p>
+          <!-- End Management, start Appendix -->
+
+          <h2 id="appendix" class="mt-5">Appendix</h2>
+          <p>
+            Please use the list below to provide links to evidence for all
+            parts of your justication. Please double-check all links before
+            delivering the website. Do not hesitate to refer to these numbers
+            above.
+          </p>
+          <ol>
+            <li>
+              <a href="https://" target="_blank">Lean Canvas #1</a>
+              <img class="img-fluid" src="images/lean-canvas-one.jpg" alt="lean-canvas" />
+            </li>
+            <li>
+              <a href="https://" target="_blank">Lean Canvas #2</a>
+              <img class="img-fluid" src="images/lean-canvas-two.jpg" alt="lean-canvas" />
+            </li>
+            <li>
+              <a href="https://edubuas-my.sharepoint.com/:f:/g/personal/220232_buas_nl/El_yqoqwTtdDlomaYayjPygBNg1PJP-At9z1RSjekh8m8w?e=OoKFPd" target="_blank">Voice records</a>
+            </li>
+            <li>
+              <a href="https://edubuas-my.sharepoint.com/:f:/g/personal/220232_buas_nl/EjIHiK-urwZDgFuej7MWyy4BHN46e9lOivhIpOUq4sPC7w?e=Ur0noT" target="_blank">Resources Marketing</a>
+            </li>
+            <li>
+              <a href="https://edubuas-my.sharepoint.com/:f:/g/personal/220232_buas_nl/EqHM1IhWt-VAlbTWz7XWwgoB-cs0pgDmUuFfTonrM22qYQ?e=wdiJey" target="_blank">Resources Management </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
   </div>
-  <main class="container-fluid container-xl">
-    <div class="row">
-      <div class="col-sm-4 col-md-3 col-lg-2 py-4">
-        <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between"> <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#general">General</a> <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none active" href="#content">Content</a> <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#production">Production</a>
-          <nav class="nav d-none d-sm-flex flex-column mb-2"> <a class="nav-link ms-3 p-0 mb-2" href="#production-1">Design Elements</a> <a class="nav-link ms-3 p-0 mb-2" href="#production-2">Credits</a> <a class="nav-link ms-3 p-0 mb-2" href="#production-3">Testing Report</a> </nav>
-          <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#marketing">Marketing</a>
-          <nav class="nav d-none d-sm-flex flex-column mb-2"> <a class="nav-link ms-3 p-0 mb-2" href="#marketing-1">Context of campaign and promotional activities</a> <a class="nav-link ms-3 p-0 mb-2" href="#marketing-2">Learning Points</a> <a class="nav-link ms-3 p-0 mb-2" href="#marketing-3">Future Planning</a> <a class="nav-link ms-3 p-0 mb-2" href="#marketing-4">Professionalism</a> </nav>
-          <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#management">Management</a>
-          <nav class="nav d-none d-sm-flex flex-column mb-2"> <a class="nav-link ms-3 p-0 mb-2" href="#management-1">Lean Canvas</a> <a class="nav-link ms-3 p-0 mb-2" href="#management-2">Validation of Assumptions</a> </nav>
-          <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#appendix">Appendix</a> </nav>
-      </div>
-      <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4"> 
-        
-        <!-- Start General -->
-        <h2 id="general">General Information</h2>
-        <p> This branded website is publicly available at <a href="https://buas-media-interactive.github.io/">buas-media-interactive.github.io/my-website</a> <em>(please change text <strong>and</strong> hyperlink destination)</em> </p>
-        <p> This website was created by: </p>
-        <ol>
-          <li>Aleksandra Spasova (ID: 220407)</li>
-          <li>Evgenia Trifonova (ID: 224797)</li>
-          <li>Nia Yonkova (ID: 220232)</li>
-          <li>Shanel Yuseinova (ID: 220992)</li>
-        </ol>
-        <!-- End General --> 
-        
-        <!-- Start Content -->
-        
-        <h2 id="content">Content</h2>
-        <p>Please clarify here the match between students and pieces of content. Make sure that you provide a <u>link</u> to the correct page within the website</p>
-        <table class="table table-bordered table-striped">
-          <thead>
-            <tr class="bg-white">
-              <th scope="col">#</th>
-              <th scope="col">Student ID</th>
-              <th scope="col">Value</th>
-              <th scope="col">Name and link of content</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1.</th>
-              <td>220407</td>
-              <td>Value</td>
-              <td><a href="index.html">Content title</a></td>
-            </tr>
-            <tr>
-              <th scope="row">2.</th>
-              <td>224797</td>
-              <td>Value</td>
-              <td><a href="index.html">Content title</a></td>
-            </tr>
-            <tr>
-              <th scope="row">3.</th>
-              <td>220232</td>
-              <td>Value</td>
-              <td><a href="index.html">Content title</a></td>
-            </tr>
-            <tr>
-              <th scope="row">4.</th>
-              <td>220992</td>
-              <td>Value</td>
-              <td><a href="index.html">Content title</a></td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <!-- End Content, start Production -->
-        
-        <h2 id="production" class="mt-5">Production</h2>
-        <h4 id="production-1" class="mt-2">Design Elements</h4>
-        <ul>
-          <li> Colour scheme
-            <ul class="list-unstyled">
-              <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #FFF0CF;"></span> #FFF0CF <em>This color is inspired by the soft and warm tones of some dog fur. The light beige also brings a sense of comfort and friendliness to the website. It creates a welcoming atmosphere, making visitors likable to use the services of the website.</em> </li>
-              <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #E47933;"></span> #E47933 <em>This vibrant color refers to the fur of certain dog breeds, adding a touch of energy to the palette. It gives a playful element into the design, that reflects to the active and lively nature of dogs and the positive experiences they bring to their owners.</em> </li>
-              <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #B6400E;"></span> #B6400E <em>This deep orange color is similar to the light orange one. It adds depth and contrast to the palette by creating nice, colorful visuals. It is used to draw user's attention to some key elements of the website.</em> </li>
-              <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #94C1DB;"></span> #94C1DB <em>This color represents reliability and trustworthiness. It's purpose is to evoke feelings of security in the users. It conveys the message that Doggify can take care of the beloved pets with professionalism and competence.</em> </li>
-              <li> <span class="border border-secondary rounded px-2 me-1" style="background-color: #341F09;"></span> #341F09 <em> This color reflects to the deep tones of some dog breeds' fur. The deep brown color creates a nice contrast to the light and vivid colors of the palette.It also brings a sense of stability to the palette. It provides a strong foundation for the design, where it improves readability and overall contrast.</em> </li>
-            </ul>
-          </li>
-          <li>Font choices</li>
-          <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
-          <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
-          <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
-          <li>Please relate these elements to other units, for example:
-            <ul>
-              <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
-              <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
-              <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
-            </ul>
-          </li>
-        </ul>
-        <h4 id="production-2" class="mt-2">Credits</h4>
-        <p>Please provide links and/or credits for third-party elements including:</p>
-        <ul>
-          <li>HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
-          <li>The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
-          <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
-        </ul>
-        <h4 id="production-3" class="mt-2">Testing Report</h4>
-        <p>Please write about…</p>
-        <ul>
-          <li>Your testing <strong>goals</strong> – in other words, what you are trying to learn about your website?</li>
-          <li>Your testing <strong>methods</strong>, which includes information about:
-            <ul>
-              <li>The test’s <strong>participants</strong> (number, match with target audience, etc.) </li>
-              <li>The test’s <strong>setting</strong> (which material is used, is it done remotely, on campus, at home, etc.) </li>
-              <li>The test’s <strong>protocol</strong> (what instructions are given, how it is recorded, etc.) </li>
-            </ul>
-          </li>
-          <li>Your testing <strong>results</strong>, which includes information about:
-            <ul>
-              <li>Positive and negative aspects of the UI/UX that have been identified, ranked by importance.</li>
-              <li>Improvements that have been implemented on the final website (or that would be implemented if doing so would be too complex)</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <!-- End Production, start Marketing -->
-        
-        <h2 id="marketing" class="mt-5">Marketing</h2>
-        <h4 id="marketing-1" class="mt-2">Context of campaign and promotional activities</h4>
-        <p>Explain the context of the campaign is (What the campaign is about, what the message is, which promotional activities were executed). In addition, present the objectives as mentioned in the Communication &amp; Media Plan.</p>
-        <p>Explain and justify the chosen channels/platforms used and show there is a solid connection to the objectives established in the Communication &amp; Media Plan.</p>
-        <h4 id="marketing-2" class="mt-4">Learning Points</h4>
-        <p>Identify and justify your learning point (based on the Communication &amp; Media Plan). What did you learn during the duration of the project concerning the campaign? What worked and what didn’t? What went as expected and what didn’t? What would you do differently? Reflect on the past work and describe what you learned.</p>
-        <h4 id="marketing-3" class="mt-4">Future Planning</h4>
-        <p>Reflection on what has been done and describe in detail what you would do if the project would continue.</p>
-        <p>Describe in detail your future recommendations if the campaign would be continued.</p>
-        <p>Detail and describe clearly the process of what your would do differently based on you experience on this project related to the marketing assignment.</p>
-        <h4 id="marketing-4" class="mt-4">Professionalism</h4>
-        <p>Present and organize below all social media/online activities of the campaign. Context and material are according to the brand style, image, and vision. Images on the site are of high-quality, readable, and properly designed.</p>
-        <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
-          <li class="m-2"> <a href="#"><!-- Please make a link to your socials instead --> 
-            <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg"> </a> </li>
-          <li class="m-2"> <a href="#"><!-- Please make a link to your socials instead --> 
-            <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg"> </a> </li>
-          <li class="m-2"> <a href="#"><!-- Please make a link to your socials instead --> 
-            <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg"> </a> </li>
-        </ul>
-        
-        <!-- End Marketing, start Management -->
-        
-        <h2 id="management" class="mt-5">Management</h2>
-        <h4 id="management-1" class="mt-2">Lean Canvas</h4>
-        <p>Fill in at least 2 bullet points per building block and according to the rubrics.</p>
-        <p class="fw-bold">Problem</p>
-        <ul>
-          <li>List your top 3 problems you solve for your target group(s).</li>
-          <li>Describe briefly how the problems are solved now (existing alternatives).</li>
-        </ul>
-        <p class="fw-bold">Solution</p>
-        <ul>
-          <li>Outline the brand solution(s) you have for the above problem(s).</li>
-        </ul>
-        <p class="fw-bold">Customer segments</p>
-        <ul>
-          <li>List your target customers and/or users.</li>
-          <li>Describe briefly the characteristics of your ideal customer (early adopter, brand persona).</li>
-        </ul>
-        <p class="fw-bold">Unique value proposition</p>
-        <ul>
-          <li>With a single, clear compelling message, state why your brand idea is different and worth paying attention to.</li>
-          <li></li>
-        </ul>
-        <p class="fw-bold">Unfair advantage</p>
-        <ul>
-          <li>List the aspect(s) of your brand that cannot easily be copied, also called your sustainable competitive advantage(s).</li>
-        </ul>
-        <p class="fw-bold">Channels</p>
-        <ul>
-          <li>List your main path to customers.</li>
-          <li>How do you reach them? What channel(s) do you use.</li>
-        </ul>
-        <p class="fw-bold">Key metrics</p>
-        <ul>
-          <li>List the key numbers that tell you how your brand experience is doing.</li>
-          <li>For example amount of users, downloads, visitors, subscriptions, sales etc. Numbers you are able to measure.</li>
-        </ul>
-        <p class="fw-bold">Revenue streams</p>
-        <ul>
-          <li>List your sources of revenue: describe the revenue model and the (different) revenue stream(s).</li>
-        </ul>
-        <p class="fw-bold">Cost structure</p>
-        <ul>
-          <li>List your main costs: define the fixed and variable costs.</li>
-          <li>Calculate the cost per unit.</li>
-        </ul>
-        <p class="fw-bold">Services/products</p>
-        <ul>
-          <li>State what your product and/or service is and how this contributes to your unique value proposition.</li>
-          <li>Clarify the fit between the product/service developed and the brand identity/brand image.</li>
-        </ul>
-        <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
-        <p>Write a reflection on the choices made in creating choosing the trademark, including an analysis of the existing alternatives.</p>
-        
-        <!-- End Management, start Appendix -->
-        
-        <h2 id="appendix" class="mt-5">Appendix</h2>
-        <p> Please use the list below to provide links to evidence for all parts of your justication.
-          Please double-check all links before delivering the website.
-          Do not hesitate to refer to these numbers above. </p>
-        <ol>
-          <li> <a href="https://" target="_blank">Description of evidence #1</a> </li>
-          <li> <a href="https://" target="_blank">Description of evidence #2</a> </li>
-          <li> <a href="https://" target="_blank">Description of evidence #3</a> </li>
-          <li> <a href="https://" target="_blank">Description of evidence #4</a> </li>
-          <li> <a href="https://" target="_blank">Description of evidence #5</a> </li>
-        </ol>
-      </div>
-    </div>
-  </main>
-</div>
 </body>
+
 </html>
